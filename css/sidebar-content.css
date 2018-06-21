@@ -28,6 +28,12 @@
 
 #content{
     transition: all 0.3s;
+    background-color: #7386D5;
+    height: 100%;
+}
+
+#content-inside{
+    background-color: #fff;
 }
 
 #sidebar.sidebar-displayed ~ #content{
@@ -73,6 +79,12 @@
     background-color: #7386D5;
     color: #fff;
     margin: 0;
+}
+
+.footer{
+    background-color: #7386D5;
+    padding: 5px;
+    color: #fff;
 }
 
 /*the thing that is actually that things which is --- TOGGLE BUTTON*/

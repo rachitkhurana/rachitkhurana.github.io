@@ -28,7 +28,7 @@
     	</ul>
     </nav>
 
-    <div id="content" class="container-fluid">
+    <div id="content" class="container-fluid" onclick="whenClickContentArea(this)">
 
     	<div class="header">
     		<div id="tgl-but" class="tgl-but-container">
@@ -39,14 +39,21 @@
     	</div>
 
 
-    	slkvh<br>
-    	sk<br>
-    	dlks;kb<br>
-    	sdlkgbsljb<br>
-    	dslsgjbsf<br>
-    	sflklklsjbsfb;<br>
-    	slvbs<br>
+    	<div id="content-inside" class="container-fluid"  onclick="whenClickContentArea(this)">
+    		slkvh<br>
+	    	sk<br>
+	    	dlks;kb<br>
+	    	sdlkgbsljb<br>
+	    	dslsgjbsf<br>
+	    	sflklklsjbsfb;<br>
+	    	slvbs<br>
+    	</div>
     	
+    	
+
+    	<div class="footer" onclick="whenClickContentArea(this)">
+    		All Rights Reserved by Rachit Khurana!
+    	</div>
     </div>
 
 
@@ -58,9 +65,14 @@
 		function(e){
 			e.preventDefault();
 			$("#sidebar").toggleClass("sidebar-displayed");
-			e.classList.toggle("change");
+			//e.classList.toggle("change");
 		}
 	);
+
+	function whenClickContentArea(e) {
+		e.preventDefault();
+		$("#sidebar").classList.remove("sidebar-displayed");
+	}
 </script>
 
 </body>
