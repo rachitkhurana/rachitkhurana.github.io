@@ -15,8 +15,17 @@
     
     <!-- Sidebar -->
     <nav id="sidebar" class="sidebar">
+
+    	<button id="close-sidebar" type="button" class="close" aria-label="Close">
+  			<span aria-hidden="true" style="font-size: 50px; padding-right: 10px; color: #fff;">&times;</span>
+		</button>
+
+
     	<div class="navbar-header">
-    		<img src="images\rachit.jpeg" height="150" width="150" style="transition: all 0.2s;" class="img rounded-circle">
+
+    		<img src="images\rachit.jpeg" height="150" width="150" style="transition: all 0.2s; margin-top: 90px;" class="img rounded-circle" align="center">
+    		
+
     		<a href="#" class="navbar-brand brand" style="width: 100%; display: block;">RACHIT KHURANA</a>
     	</div>
     	<ul class="nav navbar-nav">
@@ -30,29 +39,27 @@
 
     <div id="content" class="container-fluid" onclick="whenClickContentArea(this)">
 
-    	<div class="header">
-    		<div id="tgl-but" class="tgl-but-container">
+    	<div id="header" class="header">
+    		<div id="tgl-but" class="tgl-but-container" style="float: left;">
   				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
 			</div>
+
+			<!-- <div class="header-name" style="float: left;">RACHIT KHURANA</div> -->
+
     	</div>
 
-
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<!-- THE MAIN CONTENT -->
     	<div id="content-inside" class="container-fluid"  onclick="whenClickContentArea(this)">
-    		slkvh<br>
-	    	sk<br>
-	    	dlks;kb<br>
-	    	sdlkgbsljb<br>
-	    	dslsgjbsf<br>
-	    	sflklklsjbsfb;<br>
-	    	slvbs<br>
+    		<span class="name">Rachit Khurana</span>
     	</div>
-    	
-    	
+<!-- THE MAIN CONTENT END -->
+<!-- ----------------------------------------------------------------------------------------------------------- -->
 
-    	<div class="footer" onclick="whenClickContentArea(this)">
-    		All Rights Reserved by Rachit Khurana!
+    	<div class="footer">
+
     	</div>
     </div>
 
@@ -62,6 +69,14 @@
 
 <script>
 	$("#tgl-but").click(
+		function(e){
+			e.preventDefault();
+			$("#sidebar").toggleClass("sidebar-displayed");
+			//e.classList.toggle("change");
+		}
+	);
+
+	$("#close-sidebar").click(
 		function(e){
 			e.preventDefault();
 			$("#sidebar").toggleClass("sidebar-displayed");
