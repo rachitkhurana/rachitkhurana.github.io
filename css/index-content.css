@@ -9,6 +9,12 @@
 
 }
 
+mark{
+	background-color: var(--priColorContent)!important;
+	color: red;
+	font-weight: 600;
+}
+
 .about{
 	background-color: var(--priColorContent);
 	color: var(--txtOnPriColorContent);
@@ -19,29 +25,54 @@
 
 
 .name{
+	
+}
+
+.name{
+	transition: all 0.3s;
+}
+
+.nameHeading{
+
+}
+
+.myImg{
+	height: 70px;
+	width: 70px;
+}
+
+.myImg{
 
 }
 
 .about{
-
+	padding: 20px;
 }
 
 .aboutPara{
-	
+
 }
+
+.education{
+
+}
+
 
 
 
 /*----------------media queries if any----------------*/
 
 
+@media (max-width: 768px) { /*--- SMALL SCREEN ---*/
+	.about{
+		padding: 10px;
+	}
+
+}
+
 @media (min-width: 769px) { /*--- BIG SCREEN ---*/
 	.about{
 		padding: 50px;
 	}
 
-@media (max-width: 768px) { /*--- SMALL SCREEN ---*/
-	.about{
-		padding: 10px;
-	}
 }
