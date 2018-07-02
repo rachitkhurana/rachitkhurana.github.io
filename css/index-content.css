@@ -1,6 +1,7 @@
 :root{
     --priColorContent:#efefef;
     --txtOnPriColorContent:#1e1e1e;
+    --markColor: red;
 }
 
 
@@ -11,8 +12,8 @@
 
 mark{
 	background-color: var(--priColorContent)!important;
-	color: red;
-	font-weight: 600;
+	color: var(--markColor);
+	font-weight: 800;
 }
 
 .about{
@@ -49,8 +50,11 @@ mark{
 	padding: 20px;
 }
 
-.aboutPara{
-
+.aboutPara ul{
+	font-weight: 600;
+	font-size: 20px;
+	padding: 5px;
+	list-style-type: none;
 }
 
 .education{
