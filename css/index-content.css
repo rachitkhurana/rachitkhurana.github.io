@@ -61,7 +61,9 @@ mark{
 	font-family: 'Dosis';
 }
 
-
+.edu-table{
+	overflow-x: auto;
+}
 
 
 /*----------------media queries if any----------------*/
