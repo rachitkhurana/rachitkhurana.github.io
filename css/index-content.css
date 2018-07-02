@@ -71,12 +71,18 @@ mark{
 	.contentDivs{
 		padding: 10px;
 	}
+	.aboutPara{
+		font-size: 16px;
+	}
 
 }
 
 @media (min-width: 769px) { /*--- BIG SCREEN ---*/
 	.contentDivs{
 		padding: 50px;
+	}
+	.aboutPara{
+		font-size: 20px;
 	}
 
 }
