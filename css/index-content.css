@@ -50,11 +50,10 @@ mark{
 	padding: 20px;
 }
 
-.aboutPara ul{
+.aboutPara{
 	font-weight: 600;
 	font-size: 20px;
 	padding: 5px;
-	list-style-type: none;
 }
 
 .education{
