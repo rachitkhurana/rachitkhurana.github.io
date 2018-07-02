@@ -16,6 +16,11 @@ mark{
 	font-weight: 800;
 }
 
+
+.contentDivs{
+	padding: 20px;
+}
+
 .about{
 	background-color: var(--priColorContent);
 	color: var(--txtOnPriColorContent);
@@ -46,10 +51,6 @@ mark{
 
 }
 
-.about{
-	padding: 20px;
-}
-
 .aboutPara{
 	font-weight: 600;
 	font-size: 20px;
@@ -67,14 +68,14 @@ mark{
 
 
 @media (max-width: 768px) { /*--- SMALL SCREEN ---*/
-	.about{
+	.contentDivs{
 		padding: 10px;
 	}
 
 }
 
 @media (min-width: 769px) { /*--- BIG SCREEN ---*/
-	.about{
+	.contentDivs{
 		padding: 50px;
 	}
 
