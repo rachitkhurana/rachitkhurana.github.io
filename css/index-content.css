@@ -1,0 +1,47 @@
+:root{
+    --priColorContent:#efefef;
+    --txtOnPriColorContent:#1e1e1e;
+}
+
+
+
+#content-inside{
+
+}
+
+.about{
+	background-color: var(--priColorContent);
+	color: var(--txtOnPriColorContent);
+
+	font-family: 'Dosis';
+}
+
+
+
+.name{
+
+}
+
+.about{
+
+}
+
+.aboutPara{
+	
+}
+
+
+
+/*----------------media queries if any----------------*/
+
+
+@media (min-width: 769px) { /*--- BIG SCREEN ---*/
+	.about{
+		padding: 50px;
+	}
+
+@media (max-width: 768px) { /*--- SMALL SCREEN ---*/
+	.about{
+		padding: 10px;
+	}
+}
