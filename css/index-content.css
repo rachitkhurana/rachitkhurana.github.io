@@ -2,7 +2,7 @@
 
 :root{
     --priColorContent:#efefef;
-    --txtOnPriColorContent:#1e1e1e;
+    --txtOnPriColorContent:#2b2b2b;
     --markColor: red;
 }
 
@@ -21,6 +21,7 @@ mark{
 
 .contentDivs{
 	padding: 20px;
+	font-family: 'Dosis';
 }
 
 .about{
@@ -67,6 +68,9 @@ mark{
 	overflow-x: auto;
 }
 
+.edu-card-divs{
+	padding: 5px;
+}
 
 /*----------------media queries if any----------------*/
 
