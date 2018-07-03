@@ -31,11 +31,11 @@
     		<a href="#" class="navbar-brand brand" style="width: 100%; display: block;">RACHIT KHURANA</a>
     	</div>
     	<ul class="nav navbar-nav">
-    		<li class="nav-item"><a href="#">About Me</a></li>
-    		<li class="nav-item"><a href="#">Education</a></li>
-    		<li class="nav-item"><a href="#">Experience</a></li>
-    		<li class="nav-item"><a href="#">Projects</a></li>
-    		<li class="nav-item"><a href="#">Contact Me</a></li>
+    		<li class="nav-item"><a href="#" onclick="scrollTo(this,'#about')">About Me</a></li>
+    		<li class="nav-item"><a href="#" onclick="scrollTo(this,'#experience')">Experience</a></li>
+    		<li class="nav-item"><a href="#" onclick="scrollTo(this,'#education')">Education</a></li>
+    		<li class="nav-item"><a href="#" onclick="scrollTo(this,'#about')">Projects</a></li>
+    		<li class="nav-item"><a href="#" onclick="scrollTo(this,'#about')">Contact Me</a></li>
     	</ul>
     </nav>
 
@@ -60,7 +60,7 @@
     		<!-- <span class="name">Rachit Khurana</span> -->
 
 <!-- ABOUT DIV SECTION -->
-    		<div class="row">
+    		<div class="row" id="about">
                 <div class="col-md-12 col-sm-12 about contentDivs">
                     <!-- <img src="images\rachit.jpeg" class="myImg img rounded-circle"> -->
                     <span class="name"><h1 class="nameHeading">Rachit Khurana</h1></span>
@@ -83,7 +83,7 @@
 
 
 <!-- Experience DIV SECTION -->
-            <div class="row contentDivs">
+            <div class="row contentDivs" id="experience">
                
                     <div style="width: 100%"><h1 class="heading">Experience</h1></div>
                     
@@ -124,10 +124,47 @@
 
 
 <!-- EDUCATION DIV SECTION -->
-            <div class="row">
-                <div class="col-md-12 col-sm-12 contentDivs">
-                    
+            <div class="row" id="education">
+                
+                <div class="col-md-12 col-sm-12 education contentDivs">
                     <h1 class="heading">Education</h1>
+
+                    <br>
+
+                    <div class="table-responsive-sm edu-table">
+                    <table class="table table-light table-hover">
+                        <thead class="thead thead-dark">
+                            <th>Course</th>
+                            <th>School / Univ.</th>
+                            <th>Grad. Year</th>
+                            <th>Aggregate Percent / CGPA</th>
+                        </thead>
+                        <tbody class="tbody">
+                            <tr>
+                                <td>B.Tech in Computer Science Engineering</td>
+                                <td><abbr title="HMR Institute of Technology and Management">HMRITM</abbr> (<abbr title="Guru Gobind Singh Indraprastha University">GGSIPU</abbr>)</td>
+                                <td>2019</td>
+                                <td>6.9</td>
+                            </tr>
+                            <tr>
+                                <td>Class 12<sup>th</sup></td>
+                                <td><abbr title="Veda Vyasa Dayanand Anglo Vedic">VVDAV</abbr> Public School (<abbr title="Central Board of Senior Secondary Education">CBSE</abbr>)</td>
+                                <td>2015</td>
+                                <td>81 %</td>
+                            </tr>
+                            <tr>
+                                <td>Class 10<sup>th</sup></td>
+                                <td><abbr title="Veda Vyasa Dayanand Anglo Vedic">VVDAV</abbr> Public School (<abbr title="Central Board of Senior Secondary Education">CBSE</abbr>)</td>
+                                <td>2013</td>
+                                <td>7.8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <br>
+
+
 
 
                 </div>
@@ -173,6 +210,14 @@
 		e.preventDefault();
 		$("#sidebar").classList.remove("sidebar-displayed");
 	}
+
+
+    function scrollTo(a,e){
+        a.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(e).affset().top -20
+        }, 'slow');
+    }
 </script>
 
 </body>
