@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+:root{
+	
+}
+
+/*init*/
+body{
+	padding: 0;
+}
+.root{
+	padding: 0;
+}
+/* / init*/
+
+/*---------------------------------------------------*/
+
+/*---------------SIDEBAR THINGS------------------------*/
+.sidebar{
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	transition: all 0.3s;
+	overflow-x: hidden;
+	border-right: 5px solid #efefef;
+	border-left: 5px solid #efefef;
+
+	background-color: #efefef;
+	color: #222;
+}
+.sidebar-whitespace{
+	display: block;
+	height: 100px;
+}
+.sidebar-nav{
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.sidebar-nav>li{
+	display: block;
+	transition: all 0.3s;
+}
+.sidebar-nav>li>a{
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: all 0.3s;
+
+	color: #404040;
+}
+.sidebar-nav>li>a:hover{
+	background-color: #fefefe;
+	border-right: 5px solid #4286f4;
+}
+
+.sidebar-toggle-button{
+	float: left;
+	display: block;
+	height: 30px;
+	width: 40px;
+	background: url("../images/Hamburger_icon.svg") no-repeat;
+	transition: all 0.3s;
+}
+
+/*--------------SIDEBAR THINGS ENDS-------------------*/
+
+
+/*--------------CONTENT----------------------------*/
+.content{
+	padding: 0;
+	margin-left: 250px;
+	transition: all 0.3s;
+}
+
+.content-section{
+}
+
+.section-hello-world{
+	font-family: 'Righteous', cursive;
+	padding-top: 200px;
+	padding-left: 20px;
+}
+
+.hello-world-heading{
+	font-size: 70px;
+}
+
+.name-heading{
+	font-size: 90px;
+}
+
+/*-----------------CONTENT ENDS------------------*/
+
+/*----------------media queries if any----------------*/
+
+
+@media (max-width: 768px) { /*--- SMALL SCREEN ---*/
+	
+	.sidebar{
+		width: 0px;
+		z-index: 10;
+		border: none;
+	}
+	.sidebar-active{
+		width: 250px;
+		border-left: 5px solid #efefef;
+		border-right: 5px solid #efefef;
+	}
+	.sidebar-toggle-button-shifted{
+		margin-left: 250px;
+	}
+
+	.content{
+		margin-left: 0;
+	}
+
+	.hello-world-heading{
+		font-size: 40px;
+	}
+
+	.name-heading{
+		font-size: 60px;
+	}
+}
+
+@media (min-width: 769px) { /*--- BIG SCREEN ---*/
+
+	.sidebar-toggle-button{
+		display: none;
+	}
+
+
+	
+}

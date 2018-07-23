@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="theme-color" content="#2b2b2b">
+	
+	<title>Rachit Khurana</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css2/master.css">
+    <link rel="stylesheet" type="text/css" href="css2/index-content.css">
+</head>
+
+
+
+<body>
+<div id="root" class="root container-fluid">
+<!-- ROOT CONTAINER ---START--- -->
+
+<div id="sidebar" class="sidebar">
+<!-- SIDEBAR ---STARTS--- -->
+	<div class="sidebar-whitespace">
+		
+	</div>
+	<ul class="sidebar-nav">
+		<li><a href="#">Hello World</a></li>
+		<li><a href="#">Experience</a></li>
+		<li><a href="#">What I do in free time</a></li>
+		<li><a href="#">Education</a></li>
+		<li><a href="#">Contact Me</a></li>
+	</ul>
+<!-- SIDEBAR ---ENDS--- -->
+</div>
+
+<div id="content" class="content container-fluid">
+<!-- CONTENT --- STARTS --- -->
+<div class="sidebar-toggle-button" id="sidebar-toggle-button" onclick="sidebarToggle(this);"></div> <!--SIDEBAR TOGGLE BUTTON-->
+
+	<!-- SECTION : hello world -->
+	<div class="content-section section-hello-world" id="section-hello-world">
+		
+		<div class="row">
+			<div class="col-md-12 hello-world-heading">Hello World;</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 name-heading">I'm Rachit.</div>
+		</div>
+
+	</div>
+
+	<!-- SECTION : experience -->
+	<div class="row content-section" id="section-experience">
+		
+	</div>
+
+	<!-- SECTION : what i do -->
+	<div class="row content-section" id="section-what-i-do">
+		
+	</div>
+
+
+	
+<!-- CONTENT --- ENDS --- -->
+</div>
+
+<!-- ROOT CONTAINER ---END--- -->
+</div>
+<script type="text/javascript">
+
+	$("#sidebar-toggle-button").click(function(){
+		$("#sidebar-toggle-button").toggleClass("sidebar-toggle-button-shifted");
+		$("#sidebar").toggleClass("sidebar-active");
+	});
+
+</script>
+</body>
+</html>
