@@ -28,41 +28,89 @@
 		
 	</div>
 	<ul class="sidebar-nav">
-		<li><a href="#">Hello World</a></li>
-		<li><a href="#">Experience</a></li>
-		<li><a href="#">What I do in free time</a></li>
-		<li><a href="#">Education</a></li>
-		<li><a href="#">Contact Me</a></li>
+		<li><a href="#section-hello-world">Hello World</a></li>
+		<li><a href="#section-experience">Experience</a></li>
+		<li><a href="#section-what-i-do">What I do in free time</a></li>
+		<li><a href="#section-education">Education</a></li>
+		<li><a href="#section-contact-me">Contact Me</a></li>
 	</ul>
 <!-- SIDEBAR ---ENDS--- -->
 </div>
 
 <div id="content" class="content container-fluid">
 <!-- CONTENT --- STARTS --- -->
-<div class="sidebar-toggle-button" id="sidebar-toggle-button" onclick="sidebarToggle(this);"></div> <!--SIDEBAR TOGGLE BUTTON-->
+<div class="sticky-top" id="sidebar-toggle-button-container"><div class="sidebar-toggle-button" id="sidebar-toggle-button"></div></div> <!--SIDEBAR TOGGLE BUTTON-->
 
 	<!-- SECTION : hello world -->
 	<div class="content-section section-hello-world" id="section-hello-world">
-		
 		<div class="row">
 			<div class="col-md-12 hello-world-heading">Hello World;</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12 name-heading">I'm Rachit.</div>
 		</div>
-
 	</div>
-
+<div class="mid-section-space"></div>
 	<!-- SECTION : experience -->
-	<div class="row content-section" id="section-experience">
-		
-	</div>
+	<div class="content-section section-experience" id="section-experience">
+		<div class="row">
+			<div class="col-md-12 section-heading">Experience</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-12 experience-card-containing-div">
+				<div class="card " style="width: 100%">
+				  <img class="card-img-top" src="images/uilslogo.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Web Developer & Graphics Designer</h5>
+				    <p class="card-text">Developed website using HTML, CSS, JS, Wordpress and designed promotion and product graphics using Photoshop, Illustrator<br><font size="2">Now Mantained by its owner.</font></p>
+				    <a href="http://www.upinlife.in" target="_blank" class="btn btn-primary">Visit Site</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 experience-card-containing-div">
+				<div class="card " style="width: 100%">
+				  <img class="card-img-top" src="Images/card-images/card-top-img.png" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">More to Come</h5>
+				    <p class="card-text">Like my work?</p>
+				    <a href="#section-contact-me" class="btn btn-primary">Contact Me</a>
+				  </div>
+				</div>
+			</div>
+			<!-- Use for next experience
+			<div class="col-md-4 col-sm-12 experience-card-containing-div">
+				<div class="card" style="width: 100%">
+				  <img class="card-img-top" src="..." alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+			-->
 
+		</div>
+	</div>
+<div class="mid-section-space"></div>
 	<!-- SECTION : what i do -->
-	<div class="row content-section" id="section-what-i-do">
-		
+	<div class="content-section" id="section-what-i-do">
+		<div class="row">
+			<div class="col-md-12 section-heading">What I Do in my Free Time</div>
+		</div>
 	</div>
-
+<div class="mid-section-space"></div>
+	<div class="content-section" id="section-education">
+		<div class="row">
+			<div class="col-md-12 section-heading">Education</div>
+		</div>
+	</div>
+<div class="mid-section-space"></div>
+	<div class="content-section" id="section-contact-me">
+		<div class="row">
+			<div class="col-md-12 section-heading">Contact Me</div>
+		</div>
+	</div>
 
 	
 <!-- CONTENT --- ENDS --- -->

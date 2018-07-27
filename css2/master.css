@@ -5,7 +5,7 @@
 }
 
 /*init*/
-body{
+body, html{
 	padding: 0;
 }
 .root{
@@ -58,11 +58,17 @@ body{
 	border-right: 5px solid #4286f4;
 }
 
+#sidebar-toggle-button-container{
+	width: 100%;
+	background-color: #efefef;
+}
+
 .sidebar-toggle-button{
 	float: left;
 	display: block;
-	height: 30px;
-	width: 40px;
+	height: 35px;
+	width: 35px;
+	border: #fff solid 2px;
 	background: url("../images/Hamburger_icon.svg") no-repeat;
 	transition: all 0.3s;
 }
@@ -73,17 +79,25 @@ body{
 /*--------------CONTENT----------------------------*/
 .content{
 	padding: 0;
-	margin-left: 250px;
+	padding-left: 250px;
 	transition: all 0.3s;
 }
 
 .content-section{
+	padding-left: 20px;
+	font-family: 'Righteous', cursive;
+}
+
+.mid-section-space{
+	height: 30px;
+	background-color: #efefef;
 }
 
 .section-hello-world{
 	font-family: 'Righteous', cursive;
-	padding-top: 200px;
-	padding-left: 20px;
+	padding-top: 240px;
+	padding-bottom: 240px;
+	/*padding-left: 20px;*/
 }
 
 .hello-world-heading{
@@ -94,6 +108,19 @@ body{
 	font-size: 90px;
 }
 
+.section-experience{
+	font-family: 'Righteous', cursive;
+	padding-left: 10px;
+}
+
+.section-heading{
+	font-size: 50px;
+	margin-top: 30px;
+}
+
+.experience-card-containing-div{
+	padding: 30px;
+}
 /*-----------------CONTENT ENDS------------------*/
 
 /*----------------media queries if any----------------*/
@@ -116,7 +143,8 @@ body{
 	}
 
 	.content{
-		margin-left: 0;
+		z-index: 9;
+		padding-left: 0;
 	}
 
 	.hello-world-heading{
@@ -125,6 +153,14 @@ body{
 
 	.name-heading{
 		font-size: 60px;
+	}
+
+	.section-heading{
+		font-size: 30px;
+	}
+
+	.experience-card-containing-div{
+		padding: 10px;
 	}
 }
 
