@@ -1,0 +1,304 @@
+/*
+    TODO:
+    - feedElement shadow in md and not in sm
+ */
+
+:root {
+  --primary-color: rgb(71, 187, 120);
+  --secendory-color: white;
+  --accent-color: rgb(90, 90, 90);
+  --bg-color: rgb(226, 232, 240);
+
+  --shadow-color: rgba(0, 0, 0, 0.2);
+
+  --secondary-light-color: rgb(241, 241, 243);
+  --accent-light-color: rgb(113, 128, 150);
+
+  --accent-blue-color: rgb(95, 161, 177);
+
+  --black-color: rgb(0, 0, 0);
+
+  --border-radius: 8px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#container {
+  background-color: var(--bg-color);
+}
+
+/*Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+.header {
+  height: 80px;
+  background-color: var(--primary-color);
+  color: var(--secendory-color);
+  line-height: 80px;
+  text-align: center;
+}
+
+.pageContent {
+  min-height: 100vh;
+}
+
+.makePost .avatarImage {
+  height: 100%;
+  text-align: center;
+}
+
+.makePost .avatarImage img {
+  height: 40px;
+  width: auto;
+}
+
+.makePost .makePostText {
+  height: 100%;
+  line-height: 20px;
+}
+
+.feedElement {
+  background-color: var(--secendory-color);
+  border-bottom: 5px solid var(--secondary-light-color);
+}
+
+.postInfo .postInfoIcon {
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.postInfo .postInfoIcon img {
+  width: 16px;
+  line-height: 16px;
+
+  margin-top: -4px; /* TESTING */
+}
+
+.postInfo .postInfoText {
+  color: var(--accent-color);
+}
+
+.postAuthor {
+}
+.postAuthor .authorAvatar {
+  text-align: center;
+}
+.postAuthor .authorAvatar img {
+  width: 50px;
+}
+
+.postAuthor .authorTitle {
+  font-weight: bold;
+}
+
+.postAuthor .authorSubTitle {
+  color: var(--accent-light-color);
+}
+
+.postContentWrapper .postTitle {
+  font-weight: bold;
+}
+
+.postContentWrapper .postContent .postTypeText {
+  color: var(--black-color);
+}
+
+.postContentWrapper .postedIn {
+  color: var(--accent-color);
+}
+
+.postContentWrapper .postedIn .emphasizeText {
+  color: var(--black-color);
+  font-weight: bold;
+}
+
+.postButtonsWrapper .postButton {
+  text-align: center;
+  padding: 0;
+}
+
+.postButtonsWrapper .postButton button {
+  background-color: transparent;
+  font-weight: bold;
+  color: var(--accent-blue-color);
+  width: 100%;
+  outline: none;
+}
+
+.postButtonsWrapper .postButton button img {
+  width: 24px;
+  max-width: 24px;
+  height: auto;
+  margin-top: -4px;
+  padding-right: 5px;
+}
+
+.likeDefault {
+    content: url("../assets/smile_icon.png");
+    width: 24px;
+}
+
+.likeLiked {
+    content: url("../assets/smile_icon_fill.png");
+    width: 24px;
+}
+
+.commentSection {
+  border-top: 1px solid var(--secondary-light-color);
+}
+
+.commentSection .prevCommentButtonWrapper button {
+  background-color: transparent;
+  color: var(--accent-blue-color);
+}
+
+.commentSection .commentAuthorAvatar {
+  text-align: center;
+  padding: 0;
+}
+
+.commentSection .commentAuthorAvatar img {
+  width: 40px;
+  height: auto;
+}
+
+.addCommentWrapper .commentTextField input {
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  background-color: var(--secondary-light-color);
+  height: 100%;
+  padding: 0 20px;
+  color: var(--accent-color);
+}
+
+.commentSection .commentContent .authorTitle {
+  font-weight: bold;
+}
+
+.commentSection .commentContent .authorTitle span {
+  color: var(--accent-light-color);
+  font-weight: normal;
+}
+
+.commentSection .commentButtonsWrapper div {
+  padding: 0;
+}
+
+.commentSection .commentButtonsWrapper .commentTime {
+  color: var(--accent-light-color);
+  font-weight: bold;
+  line-height: 2.5em;
+  padding: 0;
+  padding-left: 15px;
+}
+
+.commentSection .commentButtonsWrapper button {
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  font-weight: bold;
+  color: var(--accent-blue-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Left Panel Menu */
+.sideMenu .menuElement button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.2em;
+    text-align: left;
+    padding: 5px 0;
+    padding-left: 15px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.sideMenu .menuElement button:hover {
+    background-color: var(--primary-color);
+    color: var(--secendory-color);
+}
+
+.menuItemActive button {
+    color: var(--primary-color);
+    background-color: #000;
+}
+
+
+
+/* Right Panel */
+
+.rightPane .advert {
+    background-color: var(--secendory-color);
+    min-height: 100px;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 4px solid var(--accent-color);
+}
+.rightPane .advert img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* =============================================================================================================================================================================== */
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    .makePost .makePostText {
+        line-height: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .feedElement {
+    border: none;
+    border-radius: var(--border-radius);
+    /* box-shadow: 0 4px 4px var(--shadow-color); */
+  }
+  .postButtonsWrapper .postButton button {
+    text-align: left;
+  }
+  .commentSection .commentButtonsWrapper .commentTime {
+    padding: 0 15px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
+}
