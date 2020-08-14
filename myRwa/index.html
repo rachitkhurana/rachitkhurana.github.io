@@ -22,15 +22,43 @@
     <!-- THE CONTENT -->
     <div class="container-fluid" id="container">
 
+        <!-- MOBILE TOP PANEL -->
+        <nav class="d-flex d-lg-none row mobileTopPanel justify-content-around py-2">
+            <div class="col-4 menuElement">
+                <div class="menuItemImage">
+                    <img src="assets/smile_icon.png" alt="home">
+                </div>
+                <div class="menuItemText">
+                    Home
+                </div>
+            </div>
+            <div class="col-4 menuElement">
+                <div class="menuItemImage">
+                    <img src="assets/smile_icon.png" alt="group">
+                </div>
+                <div class="menuItemText">
+                    Group
+                </div>
+            </div>
+            <div class="col-4 menuElement">
+                <div class="menuItemImage">
+                    <img src="assets/smile_icon.png" alt="services">
+                </div>
+                <div class="menuItemText">
+                    Services
+                </div>
+            </div>
+        </nav>
 
         <div class="row pageContent" id="pageContent">
-            <!-- LEFT PANEL -->
-            <div class="d-none d-lg-block pt-4 col-12 col-lg-2 order-1 leftPane">
+            <!-- LEFT PANEL | NAV -->
+            <nav class="d-none d-lg-block pt-4 col-12 col-lg-2 order-1 leftPane">
                 <!-- Left pane -->
-                <div class="row sideMenu px-5 pt-2">
+                <div class="row sideMenu py-2">
                     <div class="col-12 menuElement rounded mt-2 .menuItemActive">
                         <button>
                             <!-- TODO image -->
+                            <img src="assets/smile_icon.png" alt="home">
                             Home
                         </button>
                     </div>
@@ -38,24 +66,70 @@
                     <div class="col-12 menuElement rounded mt-2">
                         <button>
                             <!-- TODO image -->
-                            About
+                            <img src="assets/smile_icon.png" alt="about">
+                            About Us
                         </button>
                     </div>
 
                     <div class="col-12 menuElement rounded mt-2">
                         <button>
                             <!-- TODO image -->
+                            <img src="assets/smile_icon.png" alt="myRWA">
                             My RWA
                         </button>
                     </div>
+
+                    <div class="col-12 menuElement rounded mt-2">
+                        <button>
+                            <!-- TODO image -->
+                            <img src="assets/smile_icon.png" alt="services">
+                            Services
+                        </button>
+                    </div>
+
+                    <div class="col-12 menuElement rounded mt-2">
+                        <button>
+                            <!-- TODO image -->
+                            <img src="assets/smile_icon.png" alt="documents">
+                            Documents
+                        </button>
+                    </div>
+
+                    <div class="col-12 menuElement rounded mt-2">
+                        <button>
+                            <!-- TODO image -->
+                            <img src="assets/smile_icon.png" alt="initiatives">
+                            Initiatives
+                        </button>
+                    </div>
+
+                    <div class="col-12 menuElement rounded mt-2">
+                        <button>
+                            <!-- TODO image -->
+                            <img src="assets/smile_icon.png" alt="bills">
+                            Bills
+                        </button>
+                    </div>
+
+                    <div class="col-12 menuElement rounded mt-2">
+                        <button class="bg-danger text-light">
+                            <!-- TODO image -->
+                            <img src="assets/smile_icon.png" alt="covid">
+                            Covid Response
+                        </button>
+                    </div>
+
                 </div>
-            </div>
+            </nav>
             <!-- LEFT PANEL END -->
+
+
+
 
             <!-- MID PANEL FEEDS AND ALL -->
             <div class="col-12 col-lg-7 order-2 feedContent">
                 <!-- will contain all feed posts & make post div -->
-                <div class="row makePostWrapper p-0 p-lg-2 mt-4">
+                <div class="row makePostWrapper p-0 p-lg-2 mt-lg-4">
                     <!-- make post div will be in this -->
                     <div class="col-12 makePost p-3 feedElement shadow">
                         <div class="row">
@@ -65,14 +139,20 @@
                             </div>
                             <div class="col-10 col-lg-11 makePostText">
                                 <!-- <span class="align-middle"> -->
-                                Post a <strong>message</strong>, <strong>event</strong>, <strong>poll</strong> or
-                                <strong>alert</strong> to your neighbouthood.
+                                    <button data-toggle="modal" data-target="#exampleModal">
+                                        Post a <strong>message</strong>, <strong>event</strong>, <strong>poll</strong> or
+                                        <strong>alert</strong> to your neighbouthood.
+                                    </button>
                                 <!-- </span> -->
                             </div>
                         </div>
                         <!-- makePost end -->
                     </div>
                 </div>
+                <!-- MAKE POST WRAPPER ENDS  -->
+
+
+
                 <div class="row feedsWrapper px-lg-2 p-0" id="feedsWrapper">
                     <!-- PUT ALL POSTS INSIDE feedsWrapper -->
 
@@ -204,6 +284,132 @@
 
 
 
+                    <!-- the image post -->
+                    <!-- POST STARTS HERE -->
+                    <div class="col-12 p-3 mt-lg-4 feedElement shadow">
+                        <div class="row postInfo">
+                            <!-- the info box -->
+                            <div class="col-2 col-lg-1 postInfoIcon">
+                                <img src="assets/information-button.png" alt="info">
+                            </div>
+                            <div class="col-10 col-lg-11 postInfoText">
+                                This post is from Local Business.
+                            </div>
+                        </div>
+                        <div class="row postAuthor pt-2">
+                            <div class="col-2 col-lg-1 authorAvatar">
+                                <!-- avatar image -->
+                                <img src="assets/profile-user.png" alt="author" />
+                            </div>
+                            <div class="col-10 com-lg-11 authorText">
+                                <!-- author texts -->
+                                <div class="row">
+                                    <div class="col-12 authorTitle">
+                                        Peter Parker
+                                    </div>
+                                    <div class="col-12 authorSubTitle">
+                                        <span class="place">Neverland</span>
+                                        <span class="px-2">•</span>
+                                        <span class="time">6 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row postContentWrapper pt-4">
+                            <div class="col-12 postTitle">
+                                Title of the post. Lorem Ispum...
+                            </div>
+                            <div class="col-12 postContent">
+                                <!-- change the bellow div for changing the post -->
+                                <div class="postTypeImage">
+                                    <div class="caption">
+                                        Lorem ispum dolor sit, Pitra Dev Sandraksham.
+                                    </div>
+                                    <button onclick="alert('you pressed the image')">
+                                        <img src="assets/ad_img.png" alt="post image">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 postedIn mt-2">
+                                Posted in <span class="emphasizeText">General</span> to <span class="emphasizeText">14
+                                    neighbours</span>.
+                            </div>
+                        </div>
+                        <div class="row postButtonsWrapper mt-2">
+                            <!-- the comment & thanks button -->
+                            <div class="col-6 col-lg-3 col-xl-2 postButton">
+                                <button class="btn" onclick="clickme()">
+                                    <img alt="thank" id="thankBtnImg" class="likeDefault">
+                                    Thank
+                                </button>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-2 postButton">
+                                <button class="btn">
+                                    <img src="assets/profile-user.png" alt="comment"  style="width: 24px;">
+                                    12 Comments
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Comment Section bellow -->
+                        <div class="row commentSection mt-2">
+                            <div class="col-12 prevCommentButtonWrapper pt-2">
+                                <button class="btn">See Previous Comments</button>
+                            </div>
+                            <div class="col-12 commentsWrapper mt-1">
+                                <!-- All the comments goes here -->
+                                <!-- 1 comentElement = 1 comment -->
+                                <div class="col-12 commentElement p-0">
+                                    <div class="row">
+                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                            <img src="assets/profile-user.png" alt="user" />
+                                        </div>
+                                        <div class="col-10 col-lg-11 commentContent">
+                                            <div class="authorTitle">
+                                                Tony Stark
+                                                <span class="px-2">•</span>
+                                                <span>Malibu Point</span>
+                                            </div>
+                                            <div class="commentText">
+                                                Suscipit laborum aliquam voluptate iste aut aspernatur sit ratione
+                                                pariatur, exercitationem ex harum eius error ipsum numquam veniam
+                                                aperiam minus soluta reprehenderit?Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                            </div>
+                                            <div class="row commentButtonsWrapper">
+                                                <!-- the comment & thanks button -->
+                                                <div class="col-6 col-lg-2 commentTime">
+                                                    8 hours ago
+                                                </div>
+                                                <div class="col-3 col-lg-2">
+                                                    <button class="btn">
+                                                        Thank
+                                                    </button>
+                                                </div>
+                                                <div class="col-3 col-lg-2">
+                                                    <button class="btn">
+                                                        Reply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 addCommentWrapper mt-2">
+                                <!-- add comment function btn & fields -->
+                                <div class="row">
+                                    <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                        <img src="assets/profile-user.png" alt="user" />
+                                    </div>
+                                    <div class="col-10 col-lg-11 commentTextField">
+                                        <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST feedElement ends -->
+                    </div>
+                    <!-- POST ENDS HERE -->
                     
 
 
@@ -454,128 +660,7 @@
                     </div>
                     <!-- POST ENDS HERE -->
 
-                    <!-- POST STARTS HERE -->
-                    <div class="col-12 p-3 mt-lg-4 feedElement shadow">
-                        <div class="row postInfo">
-                            <!-- the info box -->
-                            <div class="col-2 col-lg-1 postInfoIcon">
-                                <img src="assets/information-button.png" alt="info">
-                            </div>
-                            <div class="col-10 col-lg-11 postInfoText">
-                                This post is from Local Business.
-                            </div>
-                        </div>
-                        <div class="row postAuthor pt-2">
-                            <div class="col-2 col-lg-1 authorAvatar">
-                                <!-- avatar image -->
-                                <img src="assets/profile-user.png" alt="author" />
-                            </div>
-                            <div class="col-10 com-lg-11 authorText">
-                                <!-- author texts -->
-                                <div class="row">
-                                    <div class="col-12 authorTitle">
-                                        Peter Parker
-                                    </div>
-                                    <div class="col-12 authorSubTitle">
-                                        <span class="place">Neverland</span>
-                                        <span class="px-2">•</span>
-                                        <span class="time">6 days ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row postContentWrapper pt-4">
-                            <div class="col-12 postTitle">
-                                Title of the post. Lorem Ispum...
-                            </div>
-                            <div class="col-12 postContent">
-                                <!-- change the bellow div for changing the post -->
-                                <div class="postTypeText">
-                                    Lorem ispum dolor sit, Pitra Dev Sandraksham. jhf dosdnf idie ehfie eieoje eihfeofe
-                                    eofpoep eihfei eofiepf eifheif eofeofei eifheifepo eoeppp fnxuas spwpdj wieh !
-                                    odiheofi.
-                                </div>
-                            </div>
-                            <div class="col-12 postedIn mt-2">
-                                Posted in <span class="emphasizeText">General</span> to <span class="emphasizeText">14
-                                    neighbours</span>.
-                            </div>
-                        </div>
-                        <div class="row postButtonsWrapper mt-2">
-                            <!-- the comment & thanks button -->
-                            <div class="col-6 col-lg-3 col-xl-2 postButton">
-                                <button class="btn" onclick="clickme()">
-                                    <img alt="thank" id="thankBtnImg" class="likeDefault">
-                                    Thank
-                                </button>
-                            </div>
-                            <div class="col-6 col-lg-4 col-xl-2 postButton">
-                                <button class="btn">
-                                    <img src="assets/profile-user.png" alt="comment"  style="width: 24px;">
-                                    12 Comments
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Comment Section bellow -->
-                        <div class="row commentSection mt-2">
-                            <div class="col-12 prevCommentButtonWrapper pt-2">
-                                <button class="btn">See Previous Comments</button>
-                            </div>
-                            <div class="col-12 commentsWrapper mt-1">
-                                <!-- All the comments goes here -->
-                                <!-- 1 comentElement = 1 comment -->
-                                <div class="col-12 commentElement p-0">
-                                    <div class="row">
-                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
-                                            <img src="assets/profile-user.png" alt="user" />
-                                        </div>
-                                        <div class="col-10 col-lg-11 commentContent">
-                                            <div class="authorTitle">
-                                                Tony Stark
-                                                <span class="px-2">•</span>
-                                                <span>Malibu Point</span>
-                                            </div>
-                                            <div class="commentText">
-                                                Suscipit laborum aliquam voluptate iste aut aspernatur sit ratione
-                                                pariatur, exercitationem ex harum eius error ipsum numquam veniam
-                                                aperiam minus soluta reprehenderit?Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit.
-                                            </div>
-                                            <div class="row commentButtonsWrapper">
-                                                <!-- the comment & thanks button -->
-                                                <div class="col-6 col-lg-2 commentTime">
-                                                    8 hours ago
-                                                </div>
-                                                <div class="col-3 col-lg-2">
-                                                    <button class="btn">
-                                                        Thank
-                                                    </button>
-                                                </div>
-                                                <div class="col-3 col-lg-2">
-                                                    <button class="btn">
-                                                        Reply
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 addCommentWrapper mt-2">
-                                <!-- add comment function btn & fields -->
-                                <div class="row">
-                                    <div class="col-2 col-lg-1 commentAuthorAvatar">
-                                        <img src="assets/profile-user.png" alt="user" />
-                                    </div>
-                                    <div class="col-10 col-lg-11 commentTextField">
-                                        <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- POST feedElement ends -->
-                    </div>
-                    <!-- POST ENDS HERE -->
+                    
 
 
 
@@ -619,12 +704,17 @@
     </div>
 
 
-    <script>
-        function clickme() {
-            document.getElementById("thankBtnImg").classList.toggle("likeLiked");
-            document.getElementById("thankBtnImg").classList.toggle("likeDefault");
-        }
-    </script>
+
+    <!-- all modals and popups -->
+
+
+
+    <!-- modals and popups ends -->
+
+
+
+
+    <script src="index.js"></script>
 
     <!-- Bootstrap things -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

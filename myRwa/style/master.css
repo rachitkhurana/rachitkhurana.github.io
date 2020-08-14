@@ -30,6 +30,7 @@ body {
 
 #container {
   background-color: var(--bg-color);
+  padding-bottom: 40px;
 }
 
 /*Extra small devices (portrait phones, less than 576px) 
@@ -51,6 +52,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .makePost .avatarImage {
   height: 100%;
   text-align: center;
+  padding: 6px 0;
 }
 
 .makePost .avatarImage img {
@@ -60,8 +62,22 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 .makePost .makePostText {
   height: 100%;
-  line-height: 20px;
+  /* line-height: 20px; */
 }
+
+.makePost .makePostText button {
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+}
+
+.makePost .makePostText button:hover {
+  background-color: var(--secondary-light-color);
+}
+
 
 .feedElement {
   background-color: var(--secendory-color);
@@ -105,9 +121,27 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   font-weight: bold;
 }
 
+/* different types of posts */
+/* type text */
 .postContentWrapper .postContent .postTypeText {
   color: var(--black-color);
 }
+
+/* type image */
+.postContentWrapper .postContent .postTypeImage .caption {
+  color: var(--black-color);
+}
+.postContentWrapper .postContent .postTypeImage button {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.postContentWrapper .postContent .postTypeImage button img {
+  max-width: 100%;
+}
+/* different type of posts ends */
 
 .postContentWrapper .postedIn {
   color: var(--accent-color);
@@ -217,30 +251,58 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 
 
-
 /* Left Panel Menu */
 .sideMenu .menuElement button{
     width: 100%;
     background-color: transparent;
     border: none;
     border-radius: var(--border-radius);
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: left;
-    padding: 5px 0;
+    padding: 15px 0;
     padding-left: 15px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--accent-color);
+
+    transition: all 0.1s ease-in-out;
 }
 
 .sideMenu .menuElement button:hover {
     background-color: var(--primary-color);
     color: var(--secendory-color);
+    padding-left: 25px;
+
+    box-shadow: 0 0 8px var(--shadow-color);
 }
 
-.menuItemActive button {
+.sideMenu .menuElement button img {
+  max-width: 24px !important;
+  height: auto;
+  padding-right: 5px;
+  margin-top: -4px;
+}
+
+/* when the button is active */
+.sideMenu .menuItemActive button {
     color: var(--primary-color);
     background-color: #000;
 }
+
+
+/* mobile top panel */
+.mobileTopPanel .menuElement .menuItemImage {
+  text-align: center;
+}
+
+.mobileTopPanel .menuElement .menuItemImage img {
+  max-width: 24px;
+}
+
+.mobileTopPanel .menuElement .menuItemText {
+  text-align: center;
+}
+/* mobile top panel ends */
+
 
 
 
@@ -276,6 +338,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .makePost .avatarImage {
+    padding: 0;
+  }
   .feedElement {
     border: none;
     border-radius: var(--border-radius);
