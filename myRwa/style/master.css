@@ -38,12 +38,25 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 */
 
 .header {
-  height: 80px;
+  /* height: 60px; */
   background-color: var(--primary-color);
   color: var(--secendory-color);
-  line-height: 80px;
+  /* line-height: 80px; */
   text-align: center;
+  padding: 5px 0;
 }
+.header .nav .searchBar input{
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 500px;
+}
+.header .nav .searchBar button{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
 
 .pageContent {
   min-height: 100vh;
@@ -77,6 +90,29 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .makePost .makePostText button:hover {
   background-color: var(--secondary-light-color);
 }
+
+
+
+/* make post modal popup */
+.makePostModal .tab-button {
+  padding: 10px 20px;
+}
+.makePostModal .tab-button.active {
+  color: var(--primary-color);
+  border-radius: 0;
+  border-bottom: 2px solid var(--primary-color);
+}
+.makePostModal .nav-tabs .nav-link {
+  border: none;
+  color: var(--accent-color);
+}
+.makePostModal .nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+/* make post modal popup */
+
+
 
 
 .feedElement {
@@ -121,7 +157,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   font-weight: bold;
 }
 
-/* different types of posts */
+/* different types of posts | posttype */
 /* type text */
 .postContentWrapper .postContent .postTypeText {
   color: var(--black-color);
@@ -141,6 +177,35 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .postContentWrapper .postContent .postTypeImage button img {
   max-width: 100%;
 }
+
+/* type poll */
+.postContentWrapper .postContent .postTypePoll ul {
+  padding: 5px;
+  list-style-type: none;
+}
+.postContentWrapper .postContent .postTypePoll ul li{
+  padding: 4px 0;
+  border: 1px solid var(--secondary-light-color);
+  border-radius: var(--border-radius);
+  margin: 4px 0;
+}
+.postContentWrapper .postContent .postTypePoll ul li:hover{
+  background-color: var(--secondary-light-color);
+}
+.postContentWrapper .postContent .postTypePoll ul li input[type="radio"]:checked + li {
+  background-color: var(--secondary-light-color);
+}
+.postContentWrapper .postContent .postTypePoll ul li input{
+  margin-left: 15px;
+}
+.postContentWrapper .postContent .postTypePoll ul li label{
+  font-size: 1.2em;
+  padding-left: 20px;
+  margin: 0;
+  width: 85%;
+}
+
+
 /* different type of posts ends */
 
 .postContentWrapper .postedIn {
@@ -153,11 +218,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 
 .postButtonsWrapper .postButton {
-  text-align: center;
+  /* text-align: center; */
   padding: 0;
 }
 
 .postButtonsWrapper .postButton button {
+  text-align: center;
+  padding: 5px 0;
   background-color: transparent;
   font-weight: bold;
   color: var(--accent-blue-color);
@@ -165,22 +232,23 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   outline: none;
 }
 
-.postButtonsWrapper .postButton button img {
-  width: 24px;
-  max-width: 24px;
-  height: auto;
-  margin-top: -4px;
+.postButtonsWrapper .postButton button ion-icon {
+  font-size: 18px;
+  /* margin-top: -4px; */
   padding-right: 5px;
 }
 
-.likeDefault {
-    content: url("../assets/smile_icon.png");
-    width: 24px;
+.postButtonsWrapper .postButton .likeButton {
+  width: 50% !important;
+  float: left;
 }
 
-.likeLiked {
-    content: url("../assets/smile_icon_fill.png");
-    width: 24px;
+.likeUnlikeDefault {
+    color: var(--accent-blue-color) !important;
+}
+
+.likeUnlikeActive {
+    color: var(--primary-color) !important;
 }
 
 .commentSection {
@@ -259,9 +327,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     border-radius: var(--border-radius);
     font-size: 1.1em;
     text-align: left;
-    padding: 15px 0;
+    padding: 10px 0;
     padding-left: 15px;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--accent-color);
 
     transition: all 0.1s ease-in-out;
@@ -285,7 +353,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* when the button is active */
 .sideMenu .menuItemActive button {
     color: var(--primary-color);
-    background-color: #000;
+    font-weight: bold;
 }
 
 
@@ -321,6 +389,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 
 
+
+
+
+
 /* =============================================================================================================================================================================== */
 
 
@@ -347,7 +419,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* box-shadow: 0 4px 4px var(--shadow-color); */
   }
   .postButtonsWrapper .postButton button {
-    text-align: left;
+    /* text-align: left; */
   }
   .commentSection .commentButtonsWrapper .commentTime {
     padding: 0 15px;

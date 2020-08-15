@@ -14,9 +14,22 @@
 <body>
 
     <!-- HEADER -->
-    <div class="header container-fluid" id="header">
-        HEADER
-    </div>
+    <header class="header container-fluid" id="header">
+        <nav class="nav">
+            <a class="navbar-brand" href="#">
+                <img src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/21b85d8bec9c27f07602567c1edf7024.png" width="30" height="30" alt="">
+            </a>
+            <!-- below search bar not displayed in phone -->
+            <form class="d-none d-md-flex form-inline searchBar">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-light my-2 my-sm-0" type="submit">
+                    <ion-icon name="search"></ion-icon>
+                </button>
+            </form>
+
+
+        </nav>
+    </header>
 
 
     <!-- THE CONTENT -->
@@ -26,7 +39,8 @@
         <nav class="d-flex d-lg-none row mobileTopPanel justify-content-around py-2">
             <div class="col-4 menuElement">
                 <div class="menuItemImage">
-                    <img src="assets/smile_icon.png" alt="home">
+                    <!-- <img src="assets/smile_icon.png" alt="home"> -->
+                    <ion-icon name="home-sharp" size="large"></ion-icon>
                 </div>
                 <div class="menuItemText">
                     Home
@@ -34,15 +48,17 @@
             </div>
             <div class="col-4 menuElement">
                 <div class="menuItemImage">
-                    <img src="assets/smile_icon.png" alt="group">
+                    <!-- <img src="assets/smile_icon.png" alt="group"> -->
+                    <ion-icon name="albums-sharp" size="large"></ion-icon>
                 </div>
                 <div class="menuItemText">
-                    Group
+                    My RWA
                 </div>
             </div>
             <div class="col-4 menuElement">
                 <div class="menuItemImage">
-                    <img src="assets/smile_icon.png" alt="services">
+                    <!-- <img src="assets/smile_icon.png" alt="services"> -->
+                    <ion-icon name="cog-sharp" size="large"></ion-icon>
                 </div>
                 <div class="menuItemText">
                     Services
@@ -55,10 +71,11 @@
             <nav class="d-none d-lg-block pt-4 col-12 col-lg-2 order-1 leftPane">
                 <!-- Left pane -->
                 <div class="row sideMenu py-2">
-                    <div class="col-12 menuElement rounded mt-2 .menuItemActive">
+                    <div class="col-12 menuElement rounded mt-2 menuItemActive">
                         <button>
                             <!-- TODO image -->
-                            <img src="assets/smile_icon.png" alt="home">
+                            <!-- <img src="assets/smile_icon.png" alt="home"> -->
+                            <ion-icon name="home-outline" size="small"></ion-icon>
                             Home
                         </button>
                     </div>
@@ -66,7 +83,8 @@
                     <div class="col-12 menuElement rounded mt-2">
                         <button>
                             <!-- TODO image -->
-                            <img src="assets/smile_icon.png" alt="about">
+                            <!-- <img src="assets/smile_icon.png" alt="about"> -->
+                            <ion-icon name="information-circle-outline"></ion-icon>
                             About Us
                         </button>
                     </div>
@@ -74,7 +92,8 @@
                     <div class="col-12 menuElement rounded mt-2">
                         <button>
                             <!-- TODO image -->
-                            <img src="assets/smile_icon.png" alt="myRWA">
+                            <!-- <img src="assets/smile_icon.png" alt="myRWA"> -->
+                            <ion-icon name="albums-outline"></ion-icon>
                             My RWA
                         </button>
                     </div>
@@ -82,7 +101,8 @@
                     <div class="col-12 menuElement rounded mt-2">
                         <button>
                             <!-- TODO image -->
-                            <img src="assets/smile_icon.png" alt="services">
+                            <!-- <img src="assets/smile_icon.png" alt="services"> -->
+                            <ion-icon name="cog-outline"></ion-icon>
                             Services
                         </button>
                     </div>
@@ -90,7 +110,8 @@
                     <div class="col-12 menuElement rounded mt-2">
                         <button>
                             <!-- TODO image -->
-                            <img src="assets/smile_icon.png" alt="documents">
+                            <!-- <img src="assets/smile_icon.png" alt="documents"> -->
+                            <ion-icon name="clipboard-outline"></ion-icon>
                             Documents
                         </button>
                     </div>
@@ -98,7 +119,8 @@
                     <div class="col-12 menuElement rounded mt-2">
                         <button>
                             <!-- TODO image -->
-                            <img src="assets/smile_icon.png" alt="initiatives">
+                            <!-- <img src="assets/smile_icon.png" alt="initiatives"> -->
+                            <ion-icon name="hand-right-outline" size="small"></ion-icon>
                             Initiatives
                         </button>
                     </div>
@@ -106,7 +128,8 @@
                     <div class="col-12 menuElement rounded mt-2">
                         <button>
                             <!-- TODO image -->
-                            <img src="assets/smile_icon.png" alt="bills">
+                            <!-- <img src="assets/smile_icon.png" alt="bills"> -->
+                            <ion-icon name="cash-outline"></ion-icon>
                             Bills
                         </button>
                     </div>
@@ -114,7 +137,8 @@
                     <div class="col-12 menuElement rounded mt-2">
                         <button class="bg-danger text-light">
                             <!-- TODO image -->
-                            <img src="assets/smile_icon.png" alt="covid">
+                            <!-- <img src="assets/smile_icon.png" alt="covid"> -->
+                            <ion-icon name="alert-circle-outline"></ion-icon>
                             Covid Response
                         </button>
                     </div>
@@ -139,7 +163,7 @@
                             </div>
                             <div class="col-10 col-lg-11 makePostText">
                                 <!-- <span class="align-middle"> -->
-                                    <button data-toggle="modal" data-target="#exampleModal">
+                                    <button data-toggle="modal" data-target="#makePostModal">
                                         Post a <strong>message</strong>, <strong>event</strong>, <strong>poll</strong> or
                                         <strong>alert</strong> to your neighbouthood.
                                     </button>
@@ -159,6 +183,7 @@
                     <!-- ALL POSTS GOES HERE ! -->
                     <!-- 1 feedElement = 1 post -->
 
+                    <!-- test post -->
                     <!-- POST STARTS HERE -->
                     <div class="col-12 p-3 mt-lg-4 feedElement shadow">
                         <div class="row postInfo">
@@ -206,17 +231,25 @@
                                     neighbours</span>.
                             </div>
                         </div>
+                        <!-- LIKE DISLIKE AND COMMENT BTN -->
                         <div class="row postButtonsWrapper mt-2">
                             <!-- the comment & thanks button -->
-                            <div class="col-6 col-lg-3 col-xl-2 postButton">
-                                <button class="btn" onclick="clickme()">
-                                    <img alt="thank" id="thankBtnImg" class="likeDefault">
-                                    Thank
+                            <div class="col-6 col-lg-3 col-xl-3 postButton">
+                                <button class="btn likeButton likeUnlikeActive" onclick="clickme()">
+                                    <!-- <img alt="thank" id="thankBtnImg" class="likeDefault"> -->
+                                    <ion-icon name="thumbs-up-sharp"></ion-icon>
+                                    142
+                                </button>
+                                <button class="btn likeButton">
+                                    <!-- <img alt="thank" id="thankBtnImg" class="likeDefault"> -->
+                                    <ion-icon name="thumbs-down-sharp"></ion-icon>
+                                    29
                                 </button>
                             </div>
-                            <div class="col-6 col-lg-4 col-xl-2 postButton">
+                            <div class="col-6 col-lg-4 col-xl-3 postButton">
                                 <button class="btn">
-                                    <img src="assets/profile-user.png" alt="comment"  style="width: 24px;">
+                                    <!-- <img src="assets/profile-user.png" alt="comment"  style="width: 24px;"> -->
+                                    <ion-icon name="chatbox-sharp"></ion-icon>
                                     12 Comments
                                 </button>
                             </div>
@@ -248,7 +281,7 @@
                                             </div>
                                             <div class="row commentButtonsWrapper">
                                                 <!-- the comment & thanks button -->
-                                                <div class="col-6 col-lg-2 commentTime">
+                                                <div class="col-6 col-lg-3 commentTime">
                                                     8 hours ago
                                                 </div>
                                                 <div class="col-3 col-lg-2">
@@ -335,17 +368,25 @@
                                     neighbours</span>.
                             </div>
                         </div>
+                        <!-- LIKE DISLIKE AND COMMENT BTN -->
                         <div class="row postButtonsWrapper mt-2">
                             <!-- the comment & thanks button -->
-                            <div class="col-6 col-lg-3 col-xl-2 postButton">
-                                <button class="btn" onclick="clickme()">
-                                    <img alt="thank" id="thankBtnImg" class="likeDefault">
-                                    Thank
+                            <div class="col-6 col-lg-3 col-xl-3 postButton">
+                                <button class="btn likeButton likeUnlikeActive" onclick="clickme()">
+                                    <!-- <img alt="thank" id="thankBtnImg" class="likeDefault"> -->
+                                    <ion-icon name="thumbs-up-sharp"></ion-icon>
+                                    142
+                                </button>
+                                <button class="btn likeButton">
+                                    <!-- <img alt="thank" id="thankBtnImg" class="likeDefault"> -->
+                                    <ion-icon name="thumbs-down-sharp"></ion-icon>
+                                    29
                                 </button>
                             </div>
-                            <div class="col-6 col-lg-4 col-xl-2 postButton">
+                            <div class="col-6 col-lg-4 col-xl-3 postButton">
                                 <button class="btn">
-                                    <img src="assets/profile-user.png" alt="comment"  style="width: 24px;">
+                                    <!-- <img src="assets/profile-user.png" alt="comment"  style="width: 24px;"> -->
+                                    <ion-icon name="chatbox-sharp"></ion-icon>
                                     12 Comments
                                 </button>
                             </div>
@@ -377,7 +418,7 @@
                                             </div>
                                             <div class="row commentButtonsWrapper">
                                                 <!-- the comment & thanks button -->
-                                                <div class="col-6 col-lg-2 commentTime">
+                                                <div class="col-6 col-lg-3 commentTime">
                                                     8 hours ago
                                                 </div>
                                                 <div class="col-3 col-lg-2">
@@ -413,7 +454,7 @@
                     
 
 
-                    <!-- REMOVE | BELLOW ARE REPLICA OF ABOVE -->
+                    <!-- poll post -->
                     <!-- POST STARTS HERE -->
                     <div class="col-12 p-3 mt-lg-4 feedElement shadow">
                         <div class="row postInfo">
@@ -450,10 +491,18 @@
                             </div>
                             <div class="col-12 postContent">
                                 <!-- change the bellow div for changing the post -->
-                                <div class="postTypeText">
-                                    Lorem ispum dolor sit, Pitra Dev Sandraksham. jhf dosdnf idie ehfie eieoje eihfeofe
-                                    eofpoep eihfei eofiepf eifheif eofeofei eifheifepo eoeppp fnxuas spwpdj wieh !
-                                    odiheofi.
+                                <div class="postTypePoll">
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="pollGroup1" value="input1" id="pollInput1"> <label for="pollInput1">Input 1</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pollGroup1" value="input2" id="pollInput2"> <label for="pollInput2">Input 2</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pollGroup1" value="input3" id="pollInput3"> <label for="pollInput3">Input 3</label>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-12 postedIn mt-2">
@@ -461,17 +510,25 @@
                                     neighbours</span>.
                             </div>
                         </div>
+                        <!-- LIKE DISLIKE AND COMMENT BTN -->
                         <div class="row postButtonsWrapper mt-2">
                             <!-- the comment & thanks button -->
-                            <div class="col-6 col-lg-3 col-xl-2 postButton">
-                                <button class="btn" onclick="clickme()">
-                                    <img alt="thank" id="thankBtnImg" class="likeDefault">
-                                    Thank
+                            <div class="col-6 col-lg-3 col-xl-3 postButton">
+                                <button class="btn likeButton likeUnlikeActive" onclick="clickme()">
+                                    <!-- <img alt="thank" id="thankBtnImg" class="likeDefault"> -->
+                                    <ion-icon name="thumbs-up-sharp"></ion-icon>
+                                    142
+                                </button>
+                                <button class="btn likeButton">
+                                    <!-- <img alt="thank" id="thankBtnImg" class="likeDefault"> -->
+                                    <ion-icon name="thumbs-down-sharp"></ion-icon>
+                                    29
                                 </button>
                             </div>
-                            <div class="col-6 col-lg-4 col-xl-2 postButton">
+                            <div class="col-6 col-lg-4 col-xl-3 postButton">
                                 <button class="btn">
-                                    <img src="assets/profile-user.png" alt="comment"  style="width: 24px;">
+                                    <!-- <img src="assets/profile-user.png" alt="comment"  style="width: 24px;"> -->
+                                    <ion-icon name="chatbox-sharp"></ion-icon>
                                     12 Comments
                                 </button>
                             </div>
@@ -503,7 +560,7 @@
                                             </div>
                                             <div class="row commentButtonsWrapper">
                                                 <!-- the comment & thanks button -->
-                                                <div class="col-6 col-lg-2 commentTime">
+                                                <div class="col-6 col-lg-3 commentTime">
                                                     8 hours ago
                                                 </div>
                                                 <div class="col-3 col-lg-2">
@@ -537,128 +594,6 @@
                     </div>
                     <!-- POST ENDS HERE -->
 
-                    <!-- POST STARTS HERE -->
-                    <div class="col-12 p-3 mt-lg-4 feedElement shadow">
-                        <div class="row postInfo">
-                            <!-- the info box -->
-                            <div class="col-2 col-lg-1 postInfoIcon">
-                                <img src="assets/information-button.png" alt="info">
-                            </div>
-                            <div class="col-10 col-lg-11 postInfoText">
-                                This post is from Local Business.
-                            </div>
-                        </div>
-                        <div class="row postAuthor pt-2">
-                            <div class="col-2 col-lg-1 authorAvatar">
-                                <!-- avatar image -->
-                                <img src="assets/profile-user.png" alt="author" />
-                            </div>
-                            <div class="col-10 com-lg-11 authorText">
-                                <!-- author texts -->
-                                <div class="row">
-                                    <div class="col-12 authorTitle">
-                                        Peter Parker
-                                    </div>
-                                    <div class="col-12 authorSubTitle">
-                                        <span class="place">Neverland</span>
-                                        <span class="px-2">•</span>
-                                        <span class="time">6 days ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row postContentWrapper pt-4">
-                            <div class="col-12 postTitle">
-                                Title of the post. Lorem Ispum...
-                            </div>
-                            <div class="col-12 postContent">
-                                <!-- change the bellow div for changing the post -->
-                                <div class="postTypeText">
-                                    Lorem ispum dolor sit, Pitra Dev Sandraksham. jhf dosdnf idie ehfie eieoje eihfeofe
-                                    eofpoep eihfei eofiepf eifheif eofeofei eifheifepo eoeppp fnxuas spwpdj wieh !
-                                    odiheofi.
-                                </div>
-                            </div>
-                            <div class="col-12 postedIn mt-2">
-                                Posted in <span class="emphasizeText">General</span> to <span class="emphasizeText">14
-                                    neighbours</span>.
-                            </div>
-                        </div>
-                        <div class="row postButtonsWrapper mt-2">
-                            <!-- the comment & thanks button -->
-                            <div class="col-6 col-lg-3 col-xl-2 postButton">
-                                <button class="btn" onclick="clickme()">
-                                    <img alt="thank" id="thankBtnImg" class="likeDefault">
-                                    Thank
-                                </button>
-                            </div>
-                            <div class="col-6 col-lg-4 col-xl-2 postButton">
-                                <button class="btn">
-                                    <img src="assets/profile-user.png" alt="comment"  style="width: 24px;">
-                                    12 Comments
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Comment Section bellow -->
-                        <div class="row commentSection mt-2">
-                            <div class="col-12 prevCommentButtonWrapper pt-2">
-                                <button class="btn">See Previous Comments</button>
-                            </div>
-                            <div class="col-12 commentsWrapper mt-1">
-                                <!-- All the comments goes here -->
-                                <!-- 1 comentElement = 1 comment -->
-                                <div class="col-12 commentElement p-0">
-                                    <div class="row">
-                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
-                                            <img src="assets/profile-user.png" alt="user" />
-                                        </div>
-                                        <div class="col-10 col-lg-11 commentContent">
-                                            <div class="authorTitle">
-                                                Tony Stark
-                                                <span class="px-2">•</span>
-                                                <span>Malibu Point</span>
-                                            </div>
-                                            <div class="commentText">
-                                                Suscipit laborum aliquam voluptate iste aut aspernatur sit ratione
-                                                pariatur, exercitationem ex harum eius error ipsum numquam veniam
-                                                aperiam minus soluta reprehenderit?Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit.
-                                            </div>
-                                            <div class="row commentButtonsWrapper">
-                                                <!-- the comment & thanks button -->
-                                                <div class="col-6 col-lg-2 commentTime">
-                                                    8 hours ago
-                                                </div>
-                                                <div class="col-3 col-lg-2">
-                                                    <button class="btn">
-                                                        Thank
-                                                    </button>
-                                                </div>
-                                                <div class="col-3 col-lg-2">
-                                                    <button class="btn">
-                                                        Reply
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 addCommentWrapper mt-2">
-                                <!-- add comment function btn & fields -->
-                                <div class="row">
-                                    <div class="col-2 col-lg-1 commentAuthorAvatar">
-                                        <img src="assets/profile-user.png" alt="user" />
-                                    </div>
-                                    <div class="col-10 col-lg-11 commentTextField">
-                                        <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- POST feedElement ends -->
-                    </div>
-                    <!-- POST ENDS HERE -->
 
                     
 
@@ -677,14 +612,6 @@
                 <!-- Right pane for ads -->
                 <div class="row sticky-top">
                     <!-- replicate the bellow "advert" for more -->
-                    <div class="col-12 advert shadow-sm rounded mt-2">
-                        <img src="assets/ad_img.png" alt="advertisment">
-                    </div>
-
-                    <div class="col-12 advert shadow-sm rounded mt-2">
-                        <img src="assets/ad_img.png" alt="advertisment">
-                    </div>
-
                     <div class="col-12 advert shadow-sm rounded mt-2">
                         <img src="assets/ad_img.png" alt="advertisment">
                     </div>
@@ -707,12 +634,146 @@
 
     <!-- all modals and popups -->
 
+    <!-- make post modal -->
+    <div class="modal fade makePostModal" id="makePostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+            <div class="modal-header p-0">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#messageMakePost" role="tab" aria-controls="messageMakePost" aria-selected="true">
+                            <ion-icon name="chatbox-sharp"></ion-icon>
+                            Message
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#pollMakePost" role="tab" aria-controls="pollMakePost" aria-selected="false">
+                            <ion-icon name="stats-chart-sharp"></ion-icon>
+                            Poll
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- close button -->
+                <button type="button" class="close p-0 m-2" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- make post things here -->
+                
+                <div class="tab-content" id="makePastTabContent">
+                    <!-- message make post -->
+                    <div class="tab-pane fade show active messageMakePost" id="messageMakePost" role="tabpanel" aria-labelledby="home-tab">
+                        <form>
+                            <!-- category -->
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">
+                                    <ion-icon name="pricetags-outline"></ion-icon>
+                                </label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01" required>
+                                    <option value="1">General</option>
+                                    <option value="2">Random</option>
+                                    <option value="3">More</option>
+                                </select>
+                            </div>
+                            
+                            <!-- location -->
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">
+                                        <ion-icon name="location-outline"></ion-icon>
+                                    </label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01" required>
+                                    <option value="1">Neverland</option>
+                                    <option value="2">Malabu Point</option>
+                                    <option value="3">Queens</option>
+                                </select>
+                            </div>
+
+                            <!-- subject | title -->
+
+                            <input type="text" name="subjectMakePost" id="subjectField" class="form-control mb-3" placeholder="Subject" required />
+
+                            <!-- message -->
+                            <textarea class="form-control mb-3" id="messageMakePost" rows="3" placeholder="Message" required></textarea>
+
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-success">
+                                    Post
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- poll make post -->
+                    <div class="tab-pane fade pollMakePost" id="pollMakePost" role="tabpanel" aria-labelledby="profile-tab">
+                        <form>
+                            <!-- location -->
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                </label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01" required>
+                                    <option value="1">Neverland</option>
+                                    <option value="2">Malabu Point</option>
+                                    <option value="3">Queens</option>
+                                </select>
+                            </div>
+                            <!-- ask a question | subject | title -->
+
+                            <input type="text" name="subjectMakePost" id="subjectField" class="form-control mb-3" placeholder="Ask a Question" required />
+
+                            <!-- message -->
+                            <textarea class="form-control mb-3" id="messageMakePost" rows="3" placeholder="Description (optional)"></textarea>
+
+                            <!-- poll options -->
+                            <input type="text" name="option1" id="option1" class="form-control mb-1" placeholder="Add a Choice" required />
+                            <input type="text" name="option2" id="option2" class="form-control mb-1" placeholder="Add a Choice" required />
+                            <button class="btn text-primary">Add More Options</button>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-success">
+                                    Post
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- <div class="modal-footer">
+                <button class="btn float-left">Hello</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-success">Post</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- make post popup ends -->
+
+    <!-- alerts -->
+    <!-- <div class="alert alert-danger w-80 fixed-top justify-content-center d-none" role="alert" id="alertDanger">
+        Something went wrong.
+    </div> -->
+
 
 
     <!-- modals and popups ends -->
 
-
-
+    <!-- <div class="d-flex justify-content-around my-4">
+        <button class="btn btn-danger" onclick="dangerAlert()">
+            Error Alert
+        </button>
+    </div> -->
 
     <script src="index.js"></script>
 
@@ -726,6 +787,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+        <!-- for icons -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
 </html>
