@@ -15,35 +15,38 @@
 
     <!-- HEADER -->
     <header class="header container-fluid" id="header">
-        <nav class="nav">
-            <a class="navbar-brand" href="#">
-                <img src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/21b85d8bec9c27f07602567c1edf7024.png" width="30" height="30" alt="">
-            </a>
-            <!-- below search bar not displayed in phone -->
-            <form class="d-none d-lg-flex form-inline searchBar">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-light my-2 my-sm-0" type="submit">
-                    <ion-icon name="search"></ion-icon>
-                </button>
-            </form>
+        <nav class="nav justify-content-around">
+            <div class="d-flex">
+                <a class="navbar-brand" href="#">
+                    <img src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/21b85d8bec9c27f07602567c1edf7024.png" width="30" height="30" alt="">
+                </a>
+                <!-- below search bar not displayed in phone -->
+                <form class="d-none d-lg-flex form-inline searchBar">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+                </form>
+            </div>
+            
 
             <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
             
-            <span class="d-flex headerLinks">
-                <a href="#" class="d-lg-none nav-link text-light">
+            <div class="d-flex headerLinks">
+                <button class="d-lg-none nav-link btn text-light" data-toggle="modal" data-target="#searchModal">
                     <ion-icon name="search-outline" size="large"></ion-icon>
-                </a>
-                <a href="#" class="nav-link text-light">
+                </button>
+                <button class="nav-link btn text-light">
                     <ion-icon name="notifications-outline" size="large"></ion-icon>
-                </a>
-                <a href="#" class="nav-link text-light">
+                </button>
+                <button class="nav-link btn text-light">
                     <ion-icon name="chatbubbles-outline" size="large"></ion-icon>
-                </a>
-                <a href="#" class="nav-link text-light">
+                </button>
+                <button class="nav-link btn text-light">
                     <ion-icon name="person-add-outline" size="large"></ion-icon>
-                </a>
+                </button>
                 
                 <div class="dropdown">
                     <button class="btn text-light dropdown-toggle" type="button" id="HeaderDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,9 +68,8 @@
                     </a>
                     </div>
                 </div>
-            </span>
+            </div>
 
-            
             
         
 
@@ -77,10 +79,12 @@
 
     <!-- THE CONTENT -->
     <div class="container-fluid" id="container">
+    <div class="container" id="containerContent">
 
         <!-- MOBILE TOP PANEL -->
         <nav class="d-flex d-lg-none row mobileTopPanel justify-content-around py-2">
             <div class="col-4 menuElement">
+                <a href="#">
                 <div class="menuItemImage">
                     <!-- <img src="assets/smile_icon.png" alt="home"> -->
                     <ion-icon name="home-sharp" size="large"></ion-icon>
@@ -88,8 +92,10 @@
                 <div class="menuItemText">
                     Home
                 </div>
+                </a>
             </div>
             <div class="col-4 menuElement">
+                <a href="#">
                 <div class="menuItemImage">
                     <!-- <img src="assets/smile_icon.png" alt="group"> -->
                     <ion-icon name="albums-sharp" size="large"></ion-icon>
@@ -97,8 +103,10 @@
                 <div class="menuItemText">
                     My RWA
                 </div>
+                </a>
             </div>
             <div class="col-4 menuElement">
+                <a href="#">
                 <div class="menuItemImage">
                     <!-- <img src="assets/smile_icon.png" alt="services"> -->
                     <ion-icon name="cog-sharp" size="large"></ion-icon>
@@ -106,6 +114,7 @@
                 <div class="menuItemText">
                     Services
                 </div>
+                </a>
             </div>
         </nav>
 
@@ -113,73 +122,65 @@
             <!-- LEFT PANEL | NAV -->
             <nav class="d-none d-lg-block pt-4 col-12 col-lg-2 order-1 leftPane">
                 <!-- Left pane -->
-                <div class="row sideMenu py-2">
-                    <div class="col-12 menuElement rounded mt-2 menuItemActive">
+                <div class="row sideMenu py-2 sticky-top">
+                    <div class="col-12 menuElement rounded menuItemActive">
                         <button>
-                            <!-- TODO image -->
                             <!-- <img src="assets/smile_icon.png" alt="home"> -->
                             <ion-icon name="home-outline" size="small"></ion-icon>
                             Home
                         </button>
                     </div>
 
-                    <div class="col-12 menuElement rounded mt-2">
+                    <div class="col-12 menuElement rounded">
                         <button>
-                            <!-- TODO image -->
                             <!-- <img src="assets/smile_icon.png" alt="about"> -->
                             <ion-icon name="information-circle-outline"></ion-icon>
                             About Us
                         </button>
                     </div>
 
-                    <div class="col-12 menuElement rounded mt-2">
+                    <div class="col-12 menuElement rounded">
                         <button>
-                            <!-- TODO image -->
                             <!-- <img src="assets/smile_icon.png" alt="myRWA"> -->
                             <ion-icon name="albums-outline"></ion-icon>
                             My RWA
                         </button>
                     </div>
 
-                    <div class="col-12 menuElement rounded mt-2">
+                    <div class="col-12 menuElement rounded">
                         <button>
-                            <!-- TODO image -->
                             <!-- <img src="assets/smile_icon.png" alt="services"> -->
                             <ion-icon name="cog-outline"></ion-icon>
                             Services
                         </button>
                     </div>
 
-                    <div class="col-12 menuElement rounded mt-2">
+                    <div class="col-12 menuElement rounded">
                         <button>
-                            <!-- TODO image -->
                             <!-- <img src="assets/smile_icon.png" alt="documents"> -->
                             <ion-icon name="clipboard-outline"></ion-icon>
                             Documents
                         </button>
                     </div>
 
-                    <div class="col-12 menuElement rounded mt-2">
+                    <div class="col-12 menuElement rounded">
                         <button>
-                            <!-- TODO image -->
                             <!-- <img src="assets/smile_icon.png" alt="initiatives"> -->
                             <ion-icon name="hand-right-outline" size="small"></ion-icon>
                             Initiatives
                         </button>
                     </div>
 
-                    <div class="col-12 menuElement rounded mt-2">
+                    <div class="col-12 menuElement rounded">
                         <button>
-                            <!-- TODO image -->
                             <!-- <img src="assets/smile_icon.png" alt="bills"> -->
                             <ion-icon name="cash-outline"></ion-icon>
                             Bills
                         </button>
                     </div>
 
-                    <div class="col-12 menuElement rounded mt-2">
-                        <button class="bg-danger text-light">
-                            <!-- TODO image -->
+                    <div class="col-12 menuElement rounded">
+                        <button>
                             <!-- <img src="assets/smile_icon.png" alt="covid"> -->
                             <ion-icon name="alert-circle-outline"></ion-icon>
                             Covid Response
@@ -196,12 +197,11 @@
             <!-- MID PANEL FEEDS AND ALL -->
             <div class="col-12 col-lg-7 order-2 feedContent">
                 <!-- will contain all feed posts & make post div -->
-                <div class="row makePostWrapper p-0 p-lg-2 mt-lg-4">
+                <div class="row makePostWrapper p-0 p-lg-2 mt-lg-2">
                     <!-- make post div will be in this -->
                     <div class="col-12 makePost p-3 feedElement shadow">
                         <div class="row">
                             <div class="col-2 col-lg-1 avatarImage">
-                                <!-- TODO: change image source -->
                                 <img src="assets/profile-user.png" alt="Avatar Image" />
                             </div>
                             <div class="col-10 col-lg-11 makePostText">
@@ -226,9 +226,10 @@
                     <!-- ALL POSTS GOES HERE ! -->
                     <!-- 1 feedElement = 1 post -->
 
-                    <!-- test post -->
+                    
+
                     <!-- POST STARTS HERE -->
-                    <div class="col-12 p-3 mt-lg-4 feedElement shadow">
+                    <div class="col-12 p-3 mt-lg-2 feedElement shadow">
                         <div class="row postInfo">
                             <!-- the info box -->
                             <div class="col-2 col-lg-1 postInfoIcon">
@@ -243,7 +244,7 @@
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                       <a class="dropdown-item" href="#">Hide Post</a>
-                                      <a class="dropdown-item" href="#">Repoer Post</a>
+                                      <a class="dropdown-item" href="#">Report Post</a>
                                       <a class="dropdown-item" href="#">Turn On Notification</a>
                                       <a class="dropdown-item" href="#">Change Category</a>
                                       <a class="dropdown-item" href="#">Share post</a>
@@ -306,7 +307,7 @@
                             <div class="col-6 col-lg-4 col-xl-3 postButton">
                                 <button class="btn">
                                     <!-- <img src="assets/profile-user.png" alt="comment"  style="width: 24px;"> -->
-                                    <ion-icon name="chatbox-sharp"></ion-icon>
+                                    <ion-icon name="chatbox-outline"></ion-icon>
                                     12 Comments
                                 </button>
                             </div>
@@ -319,7 +320,7 @@
                             <div class="col-12 commentsWrapper mt-1">
                                 <!-- All the comments goes here -->
                                 <!-- 1 comentElement = 1 comment -->
-                                <div class="col-12 commentElement p-0">
+                                <div class="col-12 commentElement pt-2 p-0">
                                     <div class="row">
                                         <div class="col-2 col-lg-1 commentAuthorAvatar">
                                             <img src="assets/profile-user.png" alt="user" />
@@ -352,9 +353,143 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <!-- reply to comment wrapper -->
+                                            <div class="row replyCommentWrapper">
+                                                <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                    <img src="assets/profile-user.png" alt="user" />
+                                                </div>
+                                                <div class="col-10 col-lg-11 commentContent">
+                                                    <div class="authorTitle">
+                                                        Tony Stark
+                                                        <span class="px-2">•</span>
+                                                        <span>Malibu Point</span>
+                                                    </div>
+                                                    <div class="commentText">
+                                                        Okay! That went well !!
+                                                    </div>
+                                                    <div class="row commentButtonsWrapper">
+                                                        <!-- the comment & thanks button -->
+                                                        <div class="col-6 col-lg-3 commentTime">
+                                                            8 hours ago
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Thank
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Reply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 addCommentWrapper">
+                                                    <!-- add comment function btn & fields -->
+                                                    <div class="row">
+                                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                            <img src="assets/profile-user.png" alt="user" />
+                                                        </div>
+                                                        <div class="col-10 col-lg-11 commentTextField">
+                                                            <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
+                                                        </div>
+                                                        <div class="col-12 postCommentButtons text-right d-none">
+                                                            <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                                            <button class="btn btn-success mr-2 mt-1">Post</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
+
+                                <div class="col-12 commentElement pt-2 p-0">
+                                    <div class="row">
+                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                            <img src="assets/profile-user.png" alt="user" />
+                                        </div>
+                                        <div class="col-10 col-lg-11 commentContent">
+                                            <div class="authorTitle">
+                                                Tony Stark
+                                                <span class="px-2">•</span>
+                                                <span>Malibu Point</span>
+                                            </div>
+                                            <div class="commentText">
+                                                See this !
+                                            </div>
+                                            <div class="commentImage">
+                                                <img src="assets/ad_img.png" alt="comment image">
+                                            </div>
+                                            <div class="row commentButtonsWrapper">
+                                                <!-- the comment & thanks button -->
+                                                <div class="col-6 col-lg-3 commentTime">
+                                                    8 hours ago
+                                                </div>
+                                                <div class="col-3 col-lg-2">
+                                                    <button class="btn">
+                                                        Thank
+                                                    </button>
+                                                </div>
+                                                <div class="col-3 col-lg-2">
+                                                    <button class="btn">
+                                                        Reply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- reply to comment wrapper -->
+                                            <div class="row replyCommentWrapper">
+                                                <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                    <img src="assets/profile-user.png" alt="user" />
+                                                </div>
+                                                <div class="col-10 col-lg-11 commentContent">
+                                                    <div class="authorTitle">
+                                                        Tony Stark
+                                                        <span class="px-2">•</span>
+                                                        <span>Malibu Point</span>
+                                                    </div>
+                                                    <div class="commentText">
+                                                        Okay! That went well !!
+                                                    </div>
+                                                    <div class="row commentButtonsWrapper">
+                                                        <!-- the comment & thanks button -->
+                                                        <div class="col-6 col-lg-3 commentTime">
+                                                            8 hours ago
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Thank
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Reply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 addCommentWrapper">
+                                                    <!-- add comment function btn & fields -->
+                                                    <div class="row">
+                                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                            <img src="assets/profile-user.png" alt="user" />
+                                                        </div>
+                                                        <div class="col-10 col-lg-11 commentTextField">
+                                                            <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
+                                                        </div>
+                                                        <div class="col-12 postCommentButtons text-right d-none">
+                                                            <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                                            <button class="btn btn-success mr-2 mt-1">Post</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-12 addCommentWrapper mt-2">
                                 <!-- add comment function btn & fields -->
@@ -364,6 +499,10 @@
                                     </div>
                                     <div class="col-10 col-lg-11 commentTextField">
                                         <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
+                                    </div>
+                                    <div class="col-12 postCommentButtons text-right d-none">
+                                        <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                        <button class="btn btn-success mr-2 mt-1">Post</button>
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +515,7 @@
 
                     <!-- the image post -->
                     <!-- POST STARTS HERE -->
-                    <div class="col-12 p-3 mt-lg-4 feedElement shadow">
+                    <div class="col-12 p-3 mt-lg-2 feedElement shadow">
                         <div class="row postInfo">
                             <!-- the info box -->
                             <div class="col-2 col-lg-1 postInfoIcon">
@@ -391,7 +530,7 @@
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                       <a class="dropdown-item" href="#">Hide Post</a>
-                                      <a class="dropdown-item" href="#">Repoer Post</a>
+                                      <a class="dropdown-item" href="#">Report Post</a>
                                       <a class="dropdown-item" href="#">Turn On Notification</a>
                                       <a class="dropdown-item" href="#">Change Category</a>
                                       <a class="dropdown-item" href="#">Share post</a>
@@ -429,9 +568,9 @@
                                     <div class="caption">
                                         Lorem ispum dolor sit, Pitra Dev Sandraksham.
                                     </div>
-                                    <button onclick="alert('you pressed the image')">
+                                    <!-- <button onclick="alert('you pressed the image')"> -->
                                         <img src="assets/ad_img.png" alt="post image">
-                                    </button>
+                                    <!-- </button> -->
                                 </div>
                             </div>
                             <div class="col-12 postedIn mt-2">
@@ -457,7 +596,7 @@
                             <div class="col-6 col-lg-4 col-xl-3 postButton">
                                 <button class="btn">
                                     <!-- <img src="assets/profile-user.png" alt="comment"  style="width: 24px;"> -->
-                                    <ion-icon name="chatbox-sharp"></ion-icon>
+                                    <ion-icon name="chatbox-outline"></ion-icon>
                                     12 Comments
                                 </button>
                             </div>
@@ -470,7 +609,7 @@
                             <div class="col-12 commentsWrapper mt-1">
                                 <!-- All the comments goes here -->
                                 <!-- 1 comentElement = 1 comment -->
-                                <div class="col-12 commentElement p-0">
+                                <div class="col-12 commentElement pt-2 p-0">
                                     <div class="row">
                                         <div class="col-2 col-lg-1 commentAuthorAvatar">
                                             <img src="assets/profile-user.png" alt="user" />
@@ -503,6 +642,38 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <!-- reply to comment wrapper -->
+                                            <div class="row replyCommentWrapper">
+                                                <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                    <img src="assets/profile-user.png" alt="user" />
+                                                </div>
+                                                <div class="col-10 col-lg-11 commentContent">
+                                                    <div class="authorTitle">
+                                                        Tony Stark
+                                                        <span class="px-2">•</span>
+                                                        <span>Malibu Point</span>
+                                                    </div>
+                                                    <div class="commentText">
+                                                        Okay! That went well !!
+                                                    </div>
+                                                    <div class="row commentButtonsWrapper">
+                                                        <!-- the comment & thanks button -->
+                                                        <div class="col-6 col-lg-3 commentTime">
+                                                            8 hours ago
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Thank
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Reply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -516,6 +687,10 @@
                                     <div class="col-10 col-lg-11 commentTextField">
                                         <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
                                     </div>
+                                    <div class="col-12 postCommentButtons text-right d-none">
+                                        <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                        <button class="btn btn-success mr-2 mt-1">Post</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -527,7 +702,7 @@
 
                     <!-- poll post -->
                     <!-- POST STARTS HERE -->
-                    <div class="col-12 p-3 mt-lg-4 feedElement shadow">
+                    <div class="col-12 p-3 mt-lg-2 feedElement shadow">
                         <div class="row postInfo">
                             <!-- the info box -->
                             <div class="col-2 col-lg-1 postInfoIcon">
@@ -542,7 +717,7 @@
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                       <a class="dropdown-item" href="#">Hide Post</a>
-                                      <a class="dropdown-item" href="#">Repoer Post</a>
+                                      <a class="dropdown-item" href="#">Report Post</a>
                                       <a class="dropdown-item" href="#">Turn On Notification</a>
                                       <a class="dropdown-item" href="#">Change Category</a>
                                       <a class="dropdown-item" href="#">Share post</a>
@@ -613,7 +788,7 @@
                             <div class="col-6 col-lg-4 col-xl-3 postButton">
                                 <button class="btn">
                                     <!-- <img src="assets/profile-user.png" alt="comment"  style="width: 24px;"> -->
-                                    <ion-icon name="chatbox-sharp"></ion-icon>
+                                    <ion-icon name="chatbox-outline"></ion-icon>
                                     12 Comments
                                 </button>
                             </div>
@@ -626,7 +801,7 @@
                             <div class="col-12 commentsWrapper mt-1">
                                 <!-- All the comments goes here -->
                                 <!-- 1 comentElement = 1 comment -->
-                                <div class="col-12 commentElement p-0">
+                                <div class="col-12 commentElement pt-2 p-0">
                                     <div class="row">
                                         <div class="col-2 col-lg-1 commentAuthorAvatar">
                                             <img src="assets/profile-user.png" alt="user" />
@@ -659,6 +834,38 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <!-- reply to comment wrapper -->
+                                            <div class="row replyCommentWrapper">
+                                                <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                    <img src="assets/profile-user.png" alt="user" />
+                                                </div>
+                                                <div class="col-10 col-lg-11 commentContent">
+                                                    <div class="authorTitle">
+                                                        Tony Stark
+                                                        <span class="px-2">•</span>
+                                                        <span>Malibu Point</span>
+                                                    </div>
+                                                    <div class="commentText">
+                                                        Okay! That went well !!
+                                                    </div>
+                                                    <div class="row commentButtonsWrapper">
+                                                        <!-- the comment & thanks button -->
+                                                        <div class="col-6 col-lg-3 commentTime">
+                                                            8 hours ago
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Thank
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Reply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -671,6 +878,10 @@
                                     </div>
                                     <div class="col-10 col-lg-11 commentTextField">
                                         <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
+                                    </div>
+                                    <div class="col-12 postCommentButtons text-right d-none">
+                                        <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                        <button class="btn btn-success mr-2 mt-1">Post</button>
                                     </div>
                                 </div>
                             </div>
@@ -707,6 +918,7 @@
             <!-- page content ends -->
         </div>
 
+    </div>
     </div>
 
 
@@ -845,11 +1057,50 @@
     </div>
     <!-- make post popup ends -->
 
-    <!-- alerts -->
-    <!-- <div class="alert alert-danger w-80 fixed-top justify-content-center d-none" role="alert" id="alertDanger">
-        Something went wrong.
-    </div> -->
 
+    <!-- search modal -->
+    <div class="modal fade searchModal" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header p-1">
+                <h5 class="modal-title" id="exampleModalLabel pl-4">Search</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline searchBar">
+                    <div class="input-group mb-3 searchBarContainer">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <ion-icon name="search-outline"></ion-icon>
+                          </button>
+                        </div>
+                      </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- alerts -->
+    <div id="errorAlert" class="alert alert-danger alert-dismissible fade show fixed-top text-center shadow-lg" role="alert">
+        <span id="errorAlertSpan">Something wrong here.</span>
+    </div>
+
+    <div id="successAlert" class="alert alert-success alert-dismissible fade show fixed-top text-center shadow-lg" role="alert">
+        <span id="successAlertSpan">Task succeded !</span>
+    </div>
+
+
+
+
+    <div class="text-center my-4">
+        <button class="btn btn-danger" onclick="errorAlert('Something Wrong')">ERROR</button>
+        <button class="btn btn-success" onclick="successAlert('Something Succeded!')">SUCCESS</button>
+    </div>
 
 
     <!-- modals and popups ends -->
@@ -860,7 +1111,7 @@
         </button>
     </div> -->
 
-    <script src="index.js"></script>
+  
 
     <!-- Bootstrap things -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -872,6 +1123,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+        <script src="index.js"></script>
 
         <!-- for icons -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
