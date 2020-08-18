@@ -74,15 +74,9 @@
         
 
         </nav>
-    </header>
-
-
-    <!-- THE CONTENT -->
-    <div class="container-fluid" id="container">
-    <div class="container" id="containerContent">
 
         <!-- MOBILE TOP PANEL -->
-        <nav class="d-flex d-lg-none row mobileTopPanel justify-content-around py-2">
+        <nav class="d-flex d-lg-none row mobileTopPanel justify-content-around py-2 bg-light">
             <div class="col-4 menuElement">
                 <a href="#">
                 <div class="menuItemImage">
@@ -117,6 +111,14 @@
                 </a>
             </div>
         </nav>
+
+
+    </header>
+
+
+    <!-- THE CONTENT -->
+    <div class="container-fluid" id="container">
+    <div class="container" id="containerContent">
 
         <div class="row pageContent" id="pageContent">
             <!-- LEFT PANEL | NAV -->
@@ -320,7 +322,7 @@
                             <div class="col-12 commentsWrapper mt-1">
                                 <!-- All the comments goes here -->
                                 <!-- 1 comentElement = 1 comment -->
-                                <div class="col-12 commentElement pt-2 p-0">
+                                <div class="col-12 commentElement pt-2 p-0" id="comment1">
                                     <div class="row">
                                         <div class="col-2 col-lg-1 commentAuthorAvatar">
                                             <img src="assets/profile-user.png" alt="user" />
@@ -391,7 +393,7 @@
                                                             <img src="assets/profile-user.png" alt="user" />
                                                         </div>
                                                         <div class="col-10 col-lg-11 commentTextField">
-                                                            <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
+                                                            <input type="text" name="comment" id="comment" placeholder="Reply to comment..." />
                                                         </div>
                                                         <div class="col-12 postCommentButtons text-right d-none">
                                                             <button class="btn mt-1 ml-5 text-primary">Add Image</button>
@@ -476,7 +478,7 @@
                                                             <img src="assets/profile-user.png" alt="user" />
                                                         </div>
                                                         <div class="col-10 col-lg-11 commentTextField">
-                                                            <input type="text" name="comment" id="comment" placeholder="Add a comment..." />
+                                                            <input type="text" name="comment" id="comment" placeholder="Reply to comment..." />
                                                         </div>
                                                         <div class="col-12 postCommentButtons text-right d-none">
                                                             <button class="btn mt-1 ml-5 text-primary">Add Image</button>
@@ -609,7 +611,7 @@
                             <div class="col-12 commentsWrapper mt-1">
                                 <!-- All the comments goes here -->
                                 <!-- 1 comentElement = 1 comment -->
-                                <div class="col-12 commentElement pt-2 p-0">
+                                <div class="col-12 commentElement pt-2 p-0" id="comment1">
                                     <div class="row">
                                         <div class="col-2 col-lg-1 commentAuthorAvatar">
                                             <img src="assets/profile-user.png" alt="user" />
@@ -673,10 +675,112 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-12 addCommentWrapper">
+                                                    <!-- add comment function btn & fields -->
+                                                    <div class="row">
+                                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                            <img src="assets/profile-user.png" alt="user" />
+                                                        </div>
+                                                        <div class="col-10 col-lg-11 commentTextField">
+                                                            <input type="text" name="comment" id="comment" placeholder="Reply to comment..." />
+                                                        </div>
+                                                        <div class="col-12 postCommentButtons text-right d-none">
+                                                            <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                                            <button class="btn btn-success mr-2 mt-1">Post</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
+
+                                <div class="col-12 commentElement pt-2 p-0">
+                                    <div class="row">
+                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                            <img src="assets/profile-user.png" alt="user" />
+                                        </div>
+                                        <div class="col-10 col-lg-11 commentContent">
+                                            <div class="authorTitle">
+                                                Tony Stark
+                                                <span class="px-2">•</span>
+                                                <span>Malibu Point</span>
+                                            </div>
+                                            <div class="commentText">
+                                                See this !
+                                            </div>
+                                            <div class="commentImage">
+                                                <img src="assets/ad_img.png" alt="comment image">
+                                            </div>
+                                            <div class="row commentButtonsWrapper">
+                                                <!-- the comment & thanks button -->
+                                                <div class="col-6 col-lg-3 commentTime">
+                                                    8 hours ago
+                                                </div>
+                                                <div class="col-3 col-lg-2">
+                                                    <button class="btn">
+                                                        Thank
+                                                    </button>
+                                                </div>
+                                                <div class="col-3 col-lg-2">
+                                                    <button class="btn">
+                                                        Reply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- reply to comment wrapper -->
+                                            <div class="row replyCommentWrapper">
+                                                <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                    <img src="assets/profile-user.png" alt="user" />
+                                                </div>
+                                                <div class="col-10 col-lg-11 commentContent">
+                                                    <div class="authorTitle">
+                                                        Tony Stark
+                                                        <span class="px-2">•</span>
+                                                        <span>Malibu Point</span>
+                                                    </div>
+                                                    <div class="commentText">
+                                                        Okay! That went well !!
+                                                    </div>
+                                                    <div class="row commentButtonsWrapper">
+                                                        <!-- the comment & thanks button -->
+                                                        <div class="col-6 col-lg-3 commentTime">
+                                                            8 hours ago
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Thank
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Reply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 addCommentWrapper">
+                                                    <!-- add comment function btn & fields -->
+                                                    <div class="row">
+                                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                            <img src="assets/profile-user.png" alt="user" />
+                                                        </div>
+                                                        <div class="col-10 col-lg-11 commentTextField">
+                                                            <input type="text" name="comment" id="comment" placeholder="Reply to comment..." />
+                                                        </div>
+                                                        <div class="col-12 postCommentButtons text-right d-none">
+                                                            <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                                            <button class="btn btn-success mr-2 mt-1">Post</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-12 addCommentWrapper mt-2">
                                 <!-- add comment function btn & fields -->
@@ -801,7 +905,7 @@
                             <div class="col-12 commentsWrapper mt-1">
                                 <!-- All the comments goes here -->
                                 <!-- 1 comentElement = 1 comment -->
-                                <div class="col-12 commentElement pt-2 p-0">
+                                <div class="col-12 commentElement pt-2 p-0" id="comment1">
                                     <div class="row">
                                         <div class="col-2 col-lg-1 commentAuthorAvatar">
                                             <img src="assets/profile-user.png" alt="user" />
@@ -865,10 +969,112 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-12 addCommentWrapper">
+                                                    <!-- add comment function btn & fields -->
+                                                    <div class="row">
+                                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                            <img src="assets/profile-user.png" alt="user" />
+                                                        </div>
+                                                        <div class="col-10 col-lg-11 commentTextField">
+                                                            <input type="text" name="comment" id="comment" placeholder="Reply to comment..." />
+                                                        </div>
+                                                        <div class="col-12 postCommentButtons text-right d-none">
+                                                            <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                                            <button class="btn btn-success mr-2 mt-1">Post</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
+
+                                <div class="col-12 commentElement pt-2 p-0">
+                                    <div class="row">
+                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                            <img src="assets/profile-user.png" alt="user" />
+                                        </div>
+                                        <div class="col-10 col-lg-11 commentContent">
+                                            <div class="authorTitle">
+                                                Tony Stark
+                                                <span class="px-2">•</span>
+                                                <span>Malibu Point</span>
+                                            </div>
+                                            <div class="commentText">
+                                                See this !
+                                            </div>
+                                            <div class="commentImage">
+                                                <img src="assets/ad_img.png" alt="comment image">
+                                            </div>
+                                            <div class="row commentButtonsWrapper">
+                                                <!-- the comment & thanks button -->
+                                                <div class="col-6 col-lg-3 commentTime">
+                                                    8 hours ago
+                                                </div>
+                                                <div class="col-3 col-lg-2">
+                                                    <button class="btn">
+                                                        Thank
+                                                    </button>
+                                                </div>
+                                                <div class="col-3 col-lg-2">
+                                                    <button class="btn">
+                                                        Reply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- reply to comment wrapper -->
+                                            <div class="row replyCommentWrapper">
+                                                <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                    <img src="assets/profile-user.png" alt="user" />
+                                                </div>
+                                                <div class="col-10 col-lg-11 commentContent">
+                                                    <div class="authorTitle">
+                                                        Tony Stark
+                                                        <span class="px-2">•</span>
+                                                        <span>Malibu Point</span>
+                                                    </div>
+                                                    <div class="commentText">
+                                                        Okay! That went well !!
+                                                    </div>
+                                                    <div class="row commentButtonsWrapper">
+                                                        <!-- the comment & thanks button -->
+                                                        <div class="col-6 col-lg-3 commentTime">
+                                                            8 hours ago
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Thank
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-3 col-lg-2">
+                                                            <button class="btn">
+                                                                Reply
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 addCommentWrapper">
+                                                    <!-- add comment function btn & fields -->
+                                                    <div class="row">
+                                                        <div class="col-2 col-lg-1 commentAuthorAvatar">
+                                                            <img src="assets/profile-user.png" alt="user" />
+                                                        </div>
+                                                        <div class="col-10 col-lg-11 commentTextField">
+                                                            <input type="text" name="comment" id="comment" placeholder="Reply to comment..." />
+                                                        </div>
+                                                        <div class="col-12 postCommentButtons text-right d-none">
+                                                            <button class="btn mt-1 ml-5 text-primary">Add Image</button>
+                                                            <button class="btn btn-success mr-2 mt-1">Post</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-12 addCommentWrapper mt-2">
                                 <!-- add comment function btn & fields -->
@@ -933,7 +1139,7 @@
 
     <!-- make post modal -->
     <div class="modal fade makePostModal" id="makePostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
             <div class="modal-header p-0">
                 <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
@@ -1033,9 +1239,13 @@
                             <textarea class="form-control mb-3" id="messageMakePost" rows="3" placeholder="Description (optional)"></textarea>
 
                             <!-- poll options -->
-                            <input type="text" name="option1" id="option1" class="form-control mb-1" placeholder="Add a Choice" required />
-                            <input type="text" name="option2" id="option2" class="form-control mb-1" placeholder="Add a Choice" required />
-                            <button class="btn text-primary">Add More Options</button>
+                            <div id="choiceGroupMakePost">
+                                <input type="text" name="option1" id="option1" class="form-control mb-1" placeholder="Add a Choice" required />
+                                <input type="text" name="option2" id="option2" class="form-control mb-1" placeholder="Add a Choice" required />
+                            </div>
+                            <button class="btn text-primary" onclick="addMoreChoiceMakePost()">
+                                Add More Options
+                            </button>
                             <div class="d-flex justify-content-end">
                                 <button type="submit" class="btn btn-success">
                                     Post
@@ -1094,10 +1304,17 @@
         <span id="successAlertSpan">Task succeded !</span>
     </div>
 
+    <div id="newPostPopup" class="alert alert-success alert-dismissible fade show fixed-top text-center shadow-lg" role="alert">
+        <span id="successAlertSpan">Task succeded !</span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
 
 
 
     <div class="text-center my-4">
+        This is to try the Alerts <br />
         <button class="btn btn-danger" onclick="errorAlert('Something Wrong')">ERROR</button>
         <button class="btn btn-success" onclick="successAlert('Something Succeded!')">SUCCESS</button>
     </div>

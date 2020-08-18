@@ -76,7 +76,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   padding-left: 20px;
 }
 .headerDropdown{
-  z-index: 9999;
+  z-index: 9999 !important;
 }
 .header .nav .headerLinks .dropdown a {
   padding-right: 20px;
@@ -392,6 +392,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   width: 80%;
   margin: 0 auto;
   margin-top: 200px;
+
+  z-index: 9999 !important;
 }
 
 
@@ -413,7 +415,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     padding: 10px 0;
     font-weight: 400;
     color: var(--accent-light-color);
-    font-size: 14px;
+    font-size: 16px;
     /* transition: all 0.1s ease-in-out; */
 }
 
@@ -491,8 +493,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+    .header .nav .headerLinks button {
+      padding-left: 30px;
+    }
     .makePost .makePostText {
         line-height: 40px;
+    }
+    .commentSection .commentImage img {
+      max-width: 50%;
     }
 }
 
