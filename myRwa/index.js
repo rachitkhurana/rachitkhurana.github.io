@@ -1,7 +1,17 @@
 console.log('Online & Ready Sirr!');
 
 
-$('.alert').hide();
+// window.onload = function() {
+//     initElements();
+// }
+
+// initialization of elements
+// function initElements() {
+    console.log("Initialising Elements")
+    $('.alert').hide();
+    $('.carousel').carousel('pause');
+// }
+
 
 var optionCountMakePost = 2
 
@@ -23,7 +33,7 @@ function successAlert(input) {
 }
 
 
-
+// to add more choice options in the poll make post
 function addMoreChoiceMakePost() {
     if(optionCountMakePost >= 4) {
         errorAlert('Max Option Count 4');
@@ -31,6 +41,6 @@ function addMoreChoiceMakePost() {
     }
     optionCountMakePost++;
     $('#choiceGroupMakePost').append(
-        '<input type="text" name="option'+optionCountMakePost+'" id="option'+optionCountMakePost+'" class="form-control mb-1" placeholder="Add a Choice" required />'
+        '<input type="text" name="option'+optionCountMakePost+'" id="option'+optionCountMakePost+'" class="form-control mb-1 border" placeholder="Add a Choice" required />'
     );
 }
