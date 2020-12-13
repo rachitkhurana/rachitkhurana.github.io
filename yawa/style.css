@@ -1,0 +1,13 @@
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #666;
+}
+
+#bg-gradient {
+    width: 100vw;
+    height: 99vh;
+    margin: 0;
+    z-index: -1;
+}
