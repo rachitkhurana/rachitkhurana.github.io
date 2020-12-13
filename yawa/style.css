@@ -1,13 +1,96 @@
+* {
+    font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
 
 body, html {
     padding: 0;
     margin: 0;
-    background-color: #666;
 }
 
 #bg-gradient {
     width: 100vw;
-    height: 99vh;
+    height: 100vh;
     margin: 0;
-    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    text-align: center;
+
+    font-weight: lighter;
+    font-size: 36px;
+    line-height: 10vh;
+    color: white;
+}
+
+.animation {
+    text-align: center;
+}
+
+.animation video {
+    width: 80%;
+    height: auto;
+}
+
+.animation img {
+    width: 80%;
+    height: auto;
+}
+
+.fullform {
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+
+    color: white;
+}
+
+.aboutPara {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 30px;
+    line-height: 24px;
+}
+
+.author {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 24px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.author .w-50 {
+    float: left;
+    width: 50%;
+}
+
+.author .madeByText {
+    margin-bottom: 10px;
+}
+
+.author .authorName {
+    font-weight: normal;
 }

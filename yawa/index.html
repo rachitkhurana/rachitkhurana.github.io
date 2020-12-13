@@ -8,9 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <canvas id="bg-gradient"></canvas>
 
+    <div id="container" class="container">
+        <div id="header" class="header">
+            YAWA
+        </div>
+
+        <div class="animation">
+            <!-- <video src="./op.mp4" autoplay loop></video> -->
+            <img src="./weatherIconAnimation.gif" alt="">
+        </div>
+
+        <div class="fullform">
+            Yet Another Weather App
+        </div>
+
+        <div class="aboutPara">
+            A weather app that gives you just the amount of information that you need.<br />
+            No More. No Less.
+        </div>
+
+
+        <div class="author">
+            <div class="madeByText">
+                Made By
+            </div>
+            <div class="w-50">
+                <div class="authorName">Rachit Khurana</div>
+            </div>
+            <div class="w-50">
+                <div class="authorName">Jai Nijhawan</div>
+            </div>
+        </div>
+    </div>
 
     <script src="./granim.min.js"></script>
     <script>
@@ -21,9 +52,9 @@
             states : {
                 "default-state": {
                     gradients: [
-                        ['#ff9966', '#ff5e62'],
-                        ['#00F260', '#0575E6'],
-                        ['#e1eec3', '#f05053']
+                        ['#00c6ff', '#0072ff'],
+                        ['#0F2027', '#2C5364'],
+                        ['#000428', '#004e92']
                     ]
                 }
             }
