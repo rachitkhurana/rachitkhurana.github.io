@@ -49,7 +49,7 @@ body, html {
 }
 
 .animation img {
-    width: 80%;
+    width: 69%;
     height: auto;
 }
 
@@ -69,6 +69,20 @@ body, html {
     margin-top: 30px;
     line-height: 24px;
 }
+
+.bibliography {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: lighter;
+    height: 60px;
+
+    margin-top: 40px;
+}
+
+.bibliography img {
+    max-width: 90px;
+}
+
 
 .author {
     position: absolute;
@@ -93,4 +107,69 @@ body, html {
 
 .author .authorName {
     font-weight: normal;
+}
+
+
+@media only screen and (max-width: 320px) {
+    .animation img {
+        width: 60%;
+        height: auto;
+    }
+
+    .aboutPara {
+        margin-top: 12px;
+    }
+
+    .bibliography {
+        margin-top: 12px;
+    }
+}
+
+
+
+
+/* ---- */
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-half {
+    width: 50%;
+}
+
+.w-one-third {
+    width: 33%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mt-8 {
+    margin-top: 8px;
 }
