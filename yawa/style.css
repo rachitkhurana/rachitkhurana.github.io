@@ -25,6 +25,8 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
+
+    overflow: hidden;
 }
 
 .header {
@@ -76,7 +78,9 @@ body, html {
     font-weight: lighter;
     height: 60px;
 
-    margin-top: 40px;
+    position: absolute;
+    bottom: 0; left: 0;
+
 }
 
 .bibliography img {
@@ -85,10 +89,10 @@ body, html {
 
 
 .author {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    bottom: 0;
-    left: 0;
+    /* bottom: 0;
+    left: 0; */
     padding-bottom: 24px;
     text-align: center;
     color: white;
